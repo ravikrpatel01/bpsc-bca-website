@@ -1,6 +1,55 @@
 import { useEffect, useRef, useState } from "react";
+import { BsGlobe } from "react-icons/bs";
 import { IoIosArrowDown } from "react-icons/io";
 import { Link } from "react-router-dom";
+
+const importantLinks = [
+  {
+    name: "VBU Website",
+    webLink: "https://www.vbu.ac.in/login",
+  },
+  {
+    name: "VBU Results",
+    webLink: "http://result.vbuuniv.in/vbuuniv/login",
+  },
+  {
+    name: "VBU Notices",
+    webLink: "https://www.vbu.ac.in/notice/Notice",
+  },
+  {
+    name: "VBU: BCA PYQs",
+    webLink:
+      "https://drive.google.com/drive/folders/19pb41O_v1PXRi96sXSmEiiuOOMrUshZn?usp=sharing",
+  },
+  {
+    name: "W3 Schools Notes",
+    webLink: "https://www.w3schools.com/",
+  },
+  {
+    name: "Ekalyan Scholarship",
+    webLink: "https://ekalyan.cgg.gov.in/",
+  },
+  {
+    name: "Image Size Reducer",
+    webLink: "https://image.pi7.org/reduce-image-size-in-kb",
+  },
+  {
+    name: "National Scholarship Portal",
+    webLink: "https://scholarships.gov.in",
+  },
+  {
+    name: "DigiLocker",
+    webLink: "https://www.digilocker.gov.in",
+  },
+  {
+    name: "Aadhar Services (UIDAI)",
+    webLink: "https://uidai.gov.in",
+  },
+  {
+    name: "PDF Tools",
+    webLink: "https://www.ilovepdf.com",
+  },
+];
 
 const navItems = [
   { name: "Home", path: "/" },
@@ -55,6 +104,20 @@ const navItems = [
 const Navbar = () => {
   const [activeMenu, setActiveMenu] = useState(null);
   const menuRef = useRef();
+
+  const [showDropdown, setShowDropdown] = useState(false);
+  const dropdownRef = useRef();
+
+  useEffect(() => {
+    const handleClickOutside = (e) => {
+      if (dropdownRef.current && !dropdownRef.current.contains(e.target)) {
+        setShowDropdown(null);
+      }
+    };
+
+    document.addEventListener("mousedown", handleClickOutside);
+    return () => document.removeEventListener("mousedown", handleClickOutside);
+  }, []);
 
   // Outside click close
   useEffect(() => {
@@ -146,13 +209,46 @@ const Navbar = () => {
       </div>
 
       {/* Right */}
-      <div>
-        <Link
-          to="/contact"
-          className="bg-emerald-500 hover:bg-emerald-400 px-4 py-1 rounded"
+      <div className="relative">
+        <div
+          onMouseEnter={() => setShowDropdown(true)}
+          onClick={() => setShowDropdown(!showDropdown)}
+          className="flex items-center gap-2"
         >
-          Contact Us
-        </Link>
+          <BsGlobe
+            title="Important Links"
+            className="text-2xl text-yellow-300 hover:scale-105 cursor-pointer"
+          />
+
+          <Link
+            to="/contact"
+            className="bg-emerald-500 hover:bg-emerald-400 px-4 py-1 rounded"
+          >
+            Contact Us
+          </Link>
+        </div>
+
+        {/* ✅ Dropdown */}
+        {showDropdown && (
+          <div
+            onMouseLeave={() => setShowDropdown(false)}
+            className="absolute right-0 mt-2 w-106 bg-white text-black rounded shadow-md z-50 p-2"
+          >
+            <div className="grid grid-cols-3 gap-1">
+              {importantLinks.map((item, index) => (
+                <a
+                  key={index}
+                  href={item.webLink}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="px-2 py-1 text-sm rounded border flex items-center justify-center hover:bg-gray-100 hover:font-medium hover:border border-gray-200 text-center"
+                >
+                  {item.name}
+                </a>
+              ))}
+            </div>
+          </div>
+        )}
       </div>
     </div>
   );
