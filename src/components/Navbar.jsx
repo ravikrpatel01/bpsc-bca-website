@@ -26,6 +26,10 @@ const importantLinks = [
     webLink: "https://www.w3schools.com/",
   },
   {
+    name: "DigiLocker",
+    webLink: "https://www.digilocker.gov.in",
+  },
+  {
     name: "Ekalyan Scholarship",
     webLink: "https://ekalyan.cgg.gov.in/",
   },
@@ -37,10 +41,7 @@ const importantLinks = [
     name: "National Scholarship Portal",
     webLink: "https://scholarships.gov.in",
   },
-  {
-    name: "DigiLocker",
-    webLink: "https://www.digilocker.gov.in",
-  },
+
   {
     name: "Aadhar Services (UIDAI)",
     webLink: "https://uidai.gov.in",
@@ -59,7 +60,7 @@ const navItems = [
     dropdown: [
       { name: "About College", path: "/about-college" },
       { name: "Vision & Mission", path: "/about/vision-and-mission" },
-      { name: "Principal Message", path: "/about/principal-message" },
+      { name: "Principal's Message", path: "/about/principal-message" },
     ],
   },
   {
