@@ -4,18 +4,9 @@ import { IoIosArrowDown } from "react-icons/io";
 import { Link } from "react-router-dom";
 
 const importantLinks = [
-  {
-    name: "VBU Website",
-    webLink: "https://www.vbu.ac.in/login",
-  },
-  {
-    name: "VBU Results",
-    webLink: "http://result.vbuuniv.in/vbuuniv/login",
-  },
-  {
-    name: "VBU Notices",
-    webLink: "https://www.vbu.ac.in/notice/Notice",
-  },
+  { name: "VBU Website", webLink: "https://www.vbu.ac.in/login" },
+  { name: "VBU Results", webLink: "http://result.vbuuniv.in/vbuuniv/login" },
+  { name: "VBU Notices", webLink: "https://www.vbu.ac.in/notice/Notice" },
   {
     name: "VBU: BCA PYQs",
     webLink:
@@ -25,18 +16,9 @@ const importantLinks = [
     name: "Chancellor Portal",
     webLink: "https://universities.jharkhand.gov.in/home",
   },
-  {
-    name: "DigiLocker",
-    webLink: "https://www.digilocker.gov.in",
-  },
-  {
-    name: "W3 Schools Notes",
-    webLink: "https://www.w3schools.com/",
-  },
-  {
-    name: "Ekalyan Scholarship",
-    webLink: "https://ekalyan.cgg.gov.in/",
-  },
+  { name: "DigiLocker", webLink: "https://www.digilocker.gov.in" },
+  { name: "W3 Schools Notes", webLink: "https://www.w3schools.com/" },
+  { name: "Ekalyan Scholarship", webLink: "https://ekalyan.cgg.gov.in/" },
   {
     name: "Image Size Reducer",
     webLink: "https://image.pi7.org/reduce-image-size-in-kb",
@@ -45,15 +27,8 @@ const importantLinks = [
     name: "National Scholarship Portal",
     webLink: "https://scholarships.gov.in",
   },
-
-  {
-    name: "Aadhar Services (UIDAI)",
-    webLink: "https://uidai.gov.in",
-  },
-  {
-    name: "PDF Tools",
-    webLink: "https://www.ilovepdf.com",
-  },
+  { name: "Aadhar Services (UIDAI)", webLink: "https://uidai.gov.in" },
+  { name: "PDF Tools", webLink: "https://www.ilovepdf.com" },
 ];
 
 const navItems = [
@@ -76,7 +51,6 @@ const navItems = [
         path: "/BCA_Syllabus.pdf",
         isDownload: true,
       },
-      // { name: "Academic Calendar", path: "/academics/calendar" },
     ],
   },
   {
@@ -110,13 +84,19 @@ const Navbar = () => {
   const [activeMenu, setActiveMenu] = useState(null);
   const menuRef = useRef();
 
-  const [showDropdown, setShowDropdown] = useState(false);
+  // 🔥 FIXED STATES
+  const [hovered, setHovered] = useState(false);
+  const [clicked, setClicked] = useState(false);
   const dropdownRef = useRef();
 
+  const isDropdownOpen = hovered || clicked;
+
+  // Outside click close (Important Links)
   useEffect(() => {
     const handleClickOutside = (e) => {
       if (dropdownRef.current && !dropdownRef.current.contains(e.target)) {
-        setShowDropdown(null);
+        setClicked(false);
+        setHovered(false);
       }
     };
 
@@ -124,7 +104,7 @@ const Navbar = () => {
     return () => document.removeEventListener("mousedown", handleClickOutside);
   }, []);
 
-  // Outside click close
+  // Outside click close (Navbar menu)
   useEffect(() => {
     const handleClickOutside = (e) => {
       if (menuRef.current && !menuRef.current.contains(e.target)) {
@@ -161,7 +141,6 @@ const Navbar = () => {
             className="relative"
             onMouseEnter={() => item.dropdown && setActiveMenu(index)}
           >
-            {/* ✅ If dropdown exists */}
             {item.dropdown ? (
               <div
                 onClick={() =>
@@ -173,7 +152,6 @@ const Navbar = () => {
                 <IoIosArrowDown />
               </div>
             ) : (
-              /* ✅ Normal Link */
               <Link
                 to={item.path}
                 className={`hover:text-yellow-300 ${item.blink ? "blink" : ""}`}
@@ -182,7 +160,6 @@ const Navbar = () => {
               </Link>
             )}
 
-            {/* Dropdown */}
             {item.dropdown && activeMenu === index && (
               <div className="absolute top-full left-0 bg-white text-black rounded shadow-md mt-2 w-48 z-50">
                 {item.dropdown.map((subItem, subIndex) =>
@@ -214,11 +191,12 @@ const Navbar = () => {
       </div>
 
       {/* Right */}
-      <div className="relative">
+      <div className="relative" ref={dropdownRef}>
         <div className="flex items-center gap-2">
           <div
-            onMouseEnter={() => setShowDropdown(true)}
-            onMouseLeave={() => setShowDropdown(false)}
+            onMouseEnter={() => setHovered(true)}
+            onMouseLeave={() => setHovered(false)}
+            onClick={() => setClicked(!clicked)}
           >
             <BsGlobe
               title="Important Links"
@@ -235,9 +213,10 @@ const Navbar = () => {
         </div>
 
         {/* ✅ Dropdown */}
-        {showDropdown && (
+        {isDropdownOpen && (
           <div
-            onMouseLeave={() => setShowDropdown(false)}
+            onMouseEnter={() => setHovered(true)}
+            onMouseLeave={() => setHovered(false)}
             className="absolute right-0 mt-2 w-106 bg-white text-black rounded shadow-md z-50 p-2"
           >
             <div className="grid grid-cols-3 gap-1">
@@ -247,7 +226,7 @@ const Navbar = () => {
                   href={item.webLink}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="px-2 py-1 text-sm rounded border flex items-center justify-center hover:bg-gray-100 hover:font-medium hover:border border-gray-200 text-center"
+                  className="px-2 py-1 text-sm rounded border flex items-center justify-center hover:bg-gray-100 hover:font-medium border-gray-200 text-center"
                 >
                   {item.name}
                 </a>
