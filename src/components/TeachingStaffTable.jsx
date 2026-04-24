@@ -20,22 +20,22 @@ const staffData = [
     email: "ravikumarpatel2001@gmail.com",
   },
 
-  {
-    name: "Swati Priya",
-    designation: "Assistant Professor",
-    image: "/images.png",
-    githubLink: "",
-    linkedInLink: "",
-    email: "",
-  },
-  {
-    name: "Sanupa Kumari",
-    designation: "Assistant Professor",
-    image: "/images.png",
-    githubLink: "",
-    linkedInLink: "",
-    email: "",
-  },
+  // {
+  //   name: "Swati Priya",
+  //   designation: "Assistant Professor",
+  //   image: "/images.png",
+  //   githubLink: "",
+  //   linkedInLink: "",
+  //   email: "",
+  // },
+  // {
+  //   name: "Sanupa Kumari",
+  //   designation: "Assistant Professor",
+  //   image: "/images.png",
+  //   githubLink: "",
+  //   linkedInLink: "",
+  //   email: "",
+  // },
 ];
 
 const TeachingStaffTable = () => {
