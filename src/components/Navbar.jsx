@@ -215,19 +215,20 @@ const Navbar = () => {
 
       {/* Right */}
       <div className="relative">
-        <div
-          onMouseEnter={() => setShowDropdown(true)}
-          onClick={() => setShowDropdown(!showDropdown)}
-          className="flex items-center gap-2"
-        >
-          <BsGlobe
-            title="Important Links"
-            className="text-2xl text-yellow-300 hover:scale-105 cursor-pointer"
-          />
+        <div className="flex items-center gap-2">
+          <div
+            onMouseEnter={() => setShowDropdown(true)}
+            onMouseLeave={() => setShowDropdown(false)}
+          >
+            <BsGlobe
+              title="Important Links"
+              className="text-2xl text-yellow-300 hover:scale-105 cursor-pointer"
+            />
+          </div>
 
           <Link
             to="/contact"
-            className="bg-emerald-500 hover:bg-emerald-400 px-4 py-1 rounded"
+            className="bg-emerald-600 hover:bg-emerald-500 font-medium px-2 py-1 rounded"
           >
             Contact Us
           </Link>

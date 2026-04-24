@@ -1,5 +1,5 @@
-import { useState } from "react";
 import emailjs from "@emailjs/browser";
+import { useState } from "react";
 import { FaMapMarkerAlt, FaPaperPlane } from "react-icons/fa";
 
 const ContactFormSection = () => {
@@ -20,10 +20,10 @@ const ContactFormSection = () => {
 
     emailjs
       .send(
-        "service_vrdmggf",
-        "template_2f67jog",
+        import.meta.env.VITE_EMAILJS_SERVICE_ID,
+        import.meta.env.VITE_EMAILJS_TEMPLATE_ID,
         formData,
-        "K_gZXemha-QqDcj-v",
+        import.meta.env.VITE_EMAILJS_PUBLIC_KEY,
       )
       .then(
         () => {
