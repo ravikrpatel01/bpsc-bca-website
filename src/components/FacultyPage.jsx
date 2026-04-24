@@ -14,8 +14,6 @@ const FacultyPage = () => {
         <div className="mt-6 text-sm flex justify-center gap-2 opacity-90">
           <Link to="/">Home</Link>
           <span>/</span>
-          <Link to="/about">About Us</Link>
-          <span>/</span>
           <span className="font-semibold">Faculty & Staff</span>
         </div>
       </div>
