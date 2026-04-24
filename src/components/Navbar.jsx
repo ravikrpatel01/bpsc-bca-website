@@ -22,12 +22,16 @@ const importantLinks = [
       "https://drive.google.com/drive/folders/19pb41O_v1PXRi96sXSmEiiuOOMrUshZn?usp=sharing",
   },
   {
-    name: "W3 Schools Notes",
-    webLink: "https://www.w3schools.com/",
+    name: "Chancellor Portal",
+    webLink: "https://universities.jharkhand.gov.in/home",
   },
   {
     name: "DigiLocker",
     webLink: "https://www.digilocker.gov.in",
+  },
+  {
+    name: "W3 Schools Notes",
+    webLink: "https://www.w3schools.com/",
   },
   {
     name: "Ekalyan Scholarship",

@@ -111,7 +111,7 @@ const NoticesSection = () => {
 
   return (
     <div>
-      <div className="bg-gray-100 py-8 px-6 md:px-16">
+      <div className="bg-gray-100 py-8 px-6 md:px-12">
         <div className="grid md:grid-cols-2 gap-5">
           {/* 🟦 College Notices */}
           <div className="bg-white rounded-xl shadow-md border-2 border-blue-700">
