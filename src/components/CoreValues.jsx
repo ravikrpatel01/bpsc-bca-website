@@ -9,12 +9,12 @@ import {
 
 const CoreValues = () => {
   return (
-    <div className="bg-gray-100 py-10 px-6">
-      <h2 className="text-3xl font-bold text-center text-blue-900 mb-12">
+    <div className="bg-gray-100 py-4 lg:py-10 px-2 lg:px-6">
+      <h2 className="text-3xl font-bold text-center text-blue-900 mb-4 lg:mb-12">
         Our Core Values
       </h2>
 
-      <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-10">
+      <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-3 lg:gap-10">
         {/* Left Side */}
         <div className="space-y-8">
           <div className="flex gap-4 items-start">

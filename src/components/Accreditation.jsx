@@ -9,7 +9,7 @@ const Accreditation = () => {
       <div className="grid md:grid-cols-2 gap-3 lg:gap-8 mt-5">
         {/* AICTE Card */}
         <div className="bg-gray-100 rounded-xl shadow-md p-3 lg:p-8 text-center hover:bg-emerald-50 border border-t-4 border-blue-600">
-          <div className="text-blue-600 border bg-blue-200 p-2 text-3xl mb-4 inline-flex items-center justify-center rounded-md">
+          <div className="text-blue-600 border bg-blue-200 p-2 text-3xl mb-1 lg:mb-4 inline-flex items-center justify-center rounded-md">
             <FaAward className="text-3xl lg:text-5xl" />
           </div>
 
@@ -28,7 +28,7 @@ const Accreditation = () => {
 
         {/* VBU Card */}
         <div className="bg-gray-100 rounded-xl shadow-md p-3 lg:p-8 text-center hover:bg-blue-50 border border-t-4 border-emerald-600">
-          <div className="text-emerald-600 border bg-emerald-100 p-2 text-3xl mb-4 inline-flex items-center justify-center rounded-md">
+          <div className="text-emerald-600 border bg-emerald-100 p-2 text-3xl mb-1 lg:mb-4 inline-flex items-center justify-center rounded-md">
             <FaUniversity className="text-3xl lg:text-5xl" />
           </div>
 
