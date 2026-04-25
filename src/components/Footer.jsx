@@ -19,19 +19,25 @@ const Footer = () => {
         </div>
 
         {/* Right Content */}
-        <div className="text-sm px-4 py-2">
-          <p className="flex gap-1 items-center justify-center">
-            Designed & Developed by
-            <span className="text-white flex items-center gap-1 font-medium leading-none">
+        <div className="text-sm px-2 lg:px-4 py-3 text-center sm:text-left">
+          {/* Line 1 */}
+          <p className="flex flex-col sm:flex-row items-center justify-center sm:justify-start gap-1">
+            <span>Designed & Developed by</span>
+
+            <span className="text-white flex items-center gap-1 font-semibold">
               RAVI KUMAR PATEL
-              <FaHeart className="text-white align-middle heart" size={16} />
+              <FaHeart className="text-white heart" size={16} />
             </span>
           </p>
 
-          <p className="flex items-center gap-1 justify-end">
-            <span className="font-bold">Asst. Professor & HOD,</span> BCA
-            Department
-            <FaLaptopCode className="text-white align-middle" size={18} />
+          {/* Line 2 */}
+          <p className="flex flex-col sm:flex-row items-center justify-center sm:justify-end gap-1 mt-2">
+            <span className="font-bold">Asst. Professor & HOD,</span>
+
+            <span className="flex items-center gap-1">
+              BCA Department
+              <FaLaptopCode className="text-white" size={18} />
+            </span>
           </p>
         </div>
       </div>
