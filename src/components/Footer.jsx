@@ -19,7 +19,7 @@ const Footer = () => {
         </div>
 
         {/* Right Content */}
-        <div className="text-sm px-2 lg:px-4 py-3 text-center sm:text-left">
+        <div className="text-sm hidden lg:block px-2 lg:px-4 py-3 text-center sm:text-left">
           {/* Line 1 */}
           <p className="flex flex-col sm:flex-row items-center justify-center sm:justify-start gap-1">
             <span>Designed & Developed by</span>
