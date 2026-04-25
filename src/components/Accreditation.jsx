@@ -2,15 +2,15 @@ import { FaAward, FaUniversity } from "react-icons/fa";
 
 const Accreditation = () => {
   return (
-    <div className="px-6 max-w-6xl mx-auto md:px-16 py-8 bg-white">
-      <h2 className="text-center text-3xl text-blue-900 font-bold">
+    <div className="px-2 max-w-6xl mx-auto md:px-16 py-4 lg:py-8 bg-white">
+      <h2 className="text-center text-2xl lg:text-3xl text-blue-900 font-bold">
         Recognition and Affiliations
       </h2>
-      <div className="grid md:grid-cols-2 gap-8 mt-5">
+      <div className="grid md:grid-cols-2 gap-3 lg:gap-8 mt-5">
         {/* AICTE Card */}
-        <div className="bg-gray-100 rounded-xl shadow-md p-8 text-center hover:bg-emerald-50 border border-t-4 border-blue-600">
+        <div className="bg-gray-100 rounded-xl shadow-md p-3 lg:p-8 text-center hover:bg-emerald-50 border border-t-4 border-blue-600">
           <div className="text-blue-600 border bg-blue-200 p-2 text-3xl mb-4 inline-flex items-center justify-center rounded-md">
-            <FaAward size={50} />
+            <FaAward className="text-3xl lg:text-5xl" />
           </div>
 
           <h2 className="text-xl font-semibold text-blue-700">
@@ -27,9 +27,9 @@ const Accreditation = () => {
         </div>
 
         {/* VBU Card */}
-        <div className="bg-gray-100 rounded-xl shadow-md p-8 text-center hover:bg-blue-50 border border-t-4 border-emerald-600">
+        <div className="bg-gray-100 rounded-xl shadow-md p-3 lg:p-8 text-center hover:bg-blue-50 border border-t-4 border-emerald-600">
           <div className="text-emerald-600 border bg-emerald-100 p-2 text-3xl mb-4 inline-flex items-center justify-center rounded-md">
-            <FaUniversity size={50} />
+            <FaUniversity className="text-3xl lg:text-5xl" />
           </div>
 
           <h2 className="text-xl font-semibold text-emerald-700">

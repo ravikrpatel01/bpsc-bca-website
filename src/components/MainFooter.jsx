@@ -57,8 +57,8 @@ const MainFooter = () => {
   const navigate = useNavigate();
 
   return (
-    <footer className="bg-linear-to-r from-[#0f172a] to-[#1e293b] text-gray-300 px-6 md:px-16 py-12">
-      <div className="grid md:grid-cols-4 gap-10">
+    <footer className="bg-linear-to-r from-[#0f172a] to-[#1e293b] text-gray-300 px-2 md:px-16 py-3 lg:py-12">
+      <div className="grid md:grid-cols-4 gap-4 lg:gap-10">
         {/* Left Section */}
         <div>
           <div className="flex items-center gap-3">

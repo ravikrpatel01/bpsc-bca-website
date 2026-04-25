@@ -1,20 +1,19 @@
 import { FaBed, FaBook, FaFutbol, FaWifi } from "react-icons/fa";
 import { FaComputer } from "react-icons/fa6";
-import { HiBuildingOffice2 } from "react-icons/hi2";
 import { SiGoogleclassroom } from "react-icons/si";
 
 const CampusSection = () => {
   return (
-    <div className="bg-gray-100 py-16 px-6 md:px-16">
+    <div className="bg-gray-100 py-6 lg:py-16 px-4 md:px-16">
       {/* Heading */}
-      <h1 className="text-center text-3xl md:text-4xl font-semibold text-blue-800 mb-12">
+      <h1 className="text-center text-2xl lg:text-3xl md:text-4xl font-semibold text-blue-800 lg:mb-12 mb-4">
         Campus & Learning Environment
       </h1>
 
       <div className="grid md:grid-cols-2 gap-10 items-center">
         {/* Left Content */}
         <div>
-          <ul className="space-y-4 text-gray-700 text-lg">
+          <ul className="lg:space-y-4 space-y-2 text-gray-700 lg:text-lg">
             <li className="flex items-center gap-3">
               <SiGoogleclassroom className="text-blue-600" />
               Smart classrooms with modern infrastructure
@@ -53,7 +52,7 @@ const CampusSection = () => {
         </div>
 
         {/* Right Images */}
-        <div className="grid grid-cols-2 gap-4">
+        <div className="grid grid-cols-2 gap-2 lg:gap-4">
           <img
             src="https://images.unsplash.com/photo-1596495578065-6e0763fa1178"
             className="rounded-lg shadow-md h-40 w-full object-cover"

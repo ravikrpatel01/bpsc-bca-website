@@ -1,7 +1,7 @@
 const LeadershipSection = () => {
   return (
-    <div className="bg-gray-100 py-16 px-6 md:px-8 text-center">
-      <div className="grid md:grid-cols-2 gap-16">
+    <div className="bg-gray-100 py-16 px-2 md:px-8 text-center">
+      <div className="grid md:grid-cols-2 gap-8 lg:gap-16">
         {/* Principal Section */}
         <div>
           <img
@@ -14,7 +14,7 @@ const LeadershipSection = () => {
             Principal's Message
           </h2>
 
-          <p className="mt-4 text-gray-700 leading-relaxed text-xl text-justify mx-auto">
+          <p className="mt-4 text-gray-700 leading-relaxed lg:text-xl text-justify mx-auto">
             "At{" "}
             <span className="font-medium">Baijnath Prasad Snehi College</span>,
             we focus on building strong{" "}
@@ -26,10 +26,10 @@ const LeadershipSection = () => {
             knowledge and technology."
           </p>
 
-          <p className="mt-4 font-semibold text-xl text-blue-800">
+          <p className="mt-4 font-semibold lg:text-xl text-blue-800">
             Dr. Bhupendra Thakur
           </p>
-          <p className="text-gray-500 text-lg">Principal</p>
+          <p className="text-gray-500 lg:text-lg">Principal</p>
 
           {/* <button className="mt-4 bg-gray-200 hover:bg-gray-300 px-4 py-2 rounded-md text-sm">
             Read Full Message
@@ -48,7 +48,7 @@ const LeadershipSection = () => {
             Secretary's Message
           </h2>
 
-          <p className="mt-4 text-gray-700 leading-relaxed text-xl text-justify mx-auto">
+          <p className="mt-4 text-gray-700 leading-relaxed lg:text-xl text-justify mx-auto">
             "We believe education in technology empowers individuals to shape
             the future.{" "}
             <span className="font-medium">Baijnath Prasad Snehi College</span>,
@@ -59,10 +59,10 @@ const LeadershipSection = () => {
             excel in the field of computer applications and beyond."
           </p>
 
-          <p className="mt-4 text-xl font-semibold text-blue-800">
+          <p className="mt-4 lg:text-xl font-semibold text-blue-800">
             Mr. Himanshu Shekhar
           </p>
-          <p className="text-gray-500 text-lg">Secretary & Founder</p>
+          <p className="text-gray-500 lg:text-lg">Secretary & Founder</p>
 
           {/* <button className="mt-4 bg-gray-200 hover:bg-gray-300 px-4 py-2 rounded-md text-sm">
             More About Leadership

@@ -9,8 +9,8 @@ const AnnouncementBar = () => {
   ];
 
   return (
-    <div className="bg-yellow-100 border-t border-b px-6 py-2 flex items-center gap-4">
-      <span className="bg-red-600 blink flex items-center gap-2 text-white px-3 py-1 text-xs rounded font-medium">
+    <div className="bg-yellow-100 border-t border-b px-2 lg:px-6 py-2 flex items-center gap-4">
+      <span className="bg-red-600 blink flex items-center gap-2 text-white px-1 lg:px-3 py-1 text-xs rounded font-medium">
         <GrAnnounce size={22} />
         ANNOUNCEMENTS
       </span>

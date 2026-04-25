@@ -118,15 +118,15 @@ const Navbar = () => {
   return (
     <div
       ref={menuRef}
-      className="bg-blue-800 sticky border-b border-b-gray-300 z-50 top-0 w-full text-white px-4 py-2 flex justify-between items-center"
+      className="bg-blue-800 sticky border-b border-b-gray-300 z-50 top-0 w-full text-white lg:px-4 px-1 py-1 lg:py-2 flex justify-between items-center"
     >
       {/* Left */}
       <div className="flex items-center gap-2">
         <Link to="/">
-          <img src="/bpsc_logo.png" className="w-14" alt="logo" />
+          <img src="/bpsc_logo.png" className="lg:w-14 w-12" alt="logo" />
         </Link>
 
-        <div>
+        <div className="hidden sm:block">
           <h1 className="text-[1.6rem] font-bold text-yellow-300">
             Baijnath Prasad Snehi College
           </h1>
@@ -134,7 +134,7 @@ const Navbar = () => {
       </div>
 
       {/* Middle */}
-      <div className="flex gap-6 relative">
+      <div className="hidden md:flex gap-6 relative">
         {navItems.map((item, index) => (
           <div
             key={index}
@@ -192,7 +192,7 @@ const Navbar = () => {
 
       {/* Right */}
       <div className="relative" ref={dropdownRef}>
-        <div className="flex items-center gap-2">
+        <div className="hidden md:flex items-center gap-2">
           <div
             onMouseEnter={() => setHovered(true)}
             onMouseLeave={() => setHovered(false)}

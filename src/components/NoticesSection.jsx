@@ -111,12 +111,12 @@ const NoticesSection = () => {
 
   return (
     <div>
-      <div className="bg-gray-100 py-8 px-6 md:px-12">
+      <div className="bg-gray-100 py-3 lg:py-8 px-2 md:px-12">
         <div className="grid md:grid-cols-2 gap-5">
           {/* 🟦 College Notices */}
           <div className="bg-white rounded-xl shadow-md border-2 border-blue-700">
-            <div className="bg-blue-700 rounded-t-lg text-white p-4 flex items-center gap-2 font-semibold text-lg">
-              <FaBullhorn className="text-2xl" />
+            <div className="bg-blue-700 rounded-t-lg text-white p-2 lg:p-4 flex items-center gap-2 font-semibold lg:text-lg">
+              <FaBullhorn className="text-xl lg:text-2xl" />
               Our College Notices
             </div>
 
@@ -129,9 +129,9 @@ const NoticesSection = () => {
               {loopedCollege.map((item, index) => (
                 <div
                   key={index}
-                  className="flex justify-between items-center px-4 py-3 border-b border-gray-300 hover:bg-gray-50"
+                  className="flex justify-between items-center px-2 lg:px-4 py-3 border-b border-gray-300 hover:bg-gray-50"
                 >
-                  <span className="font-medium text-gray-900">
+                  <span className="font-medium text-xs text-gray-900">
                     📢 {item.title}
                   </span>
 
@@ -139,12 +139,14 @@ const NoticesSection = () => {
                     <a
                       href={item.path}
                       download
-                      className="flex items-center gap-1 hover:bg-red-100 border border-gray-400 text-red-500 font-medium px-2 py-1 rounded text-sm"
+                      className="flex items-center gap-1 hover:bg-red-100 border border-gray-400 text-red-500 font-medium px-1 lg:px-2 py-1 rounded text-xs lg:text-sm"
                     >
                       <FaFilePdf className="text-red-600" />
                       Download
                     </a>
-                    <span className="text-sm text-gray-500">{item.date}</span>
+                    <span className="text-xs lg:text-sm text-gray-500">
+                      {item.date}
+                    </span>
                   </div>
                 </div>
               ))}
@@ -153,8 +155,8 @@ const NoticesSection = () => {
 
           {/* 🟩 University Notices */}
           <div className="bg-white rounded-xl shadow-md border-2 border-emerald-700">
-            <div className="bg-emerald-700 rounded-t-lg text-white p-4 flex items-center gap-2 font-semibold text-lg">
-              <FaUniversity className="text-2xl" />
+            <div className="bg-emerald-700 rounded-t-lg text-white p-2 lg:p-4 flex items-center gap-2 font-semibold lg:text-lg">
+              <FaUniversity className="text-xl lg:text-2xl" />
               Vinoba Bhave University Notices
             </div>
 
@@ -169,9 +171,9 @@ const NoticesSection = () => {
               {loopedUniversity.map((item, index) => (
                 <div
                   key={index}
-                  className="flex justify-between items-center px-4 py-3 border-b border-gray-300 hover:bg-gray-50"
+                  className="flex justify-between items-center px-2 lg:px-4 py-3 border-b border-gray-300 hover:bg-gray-50"
                 >
-                  <span className="font-medium text-gray-900">
+                  <span className="font-medium text-xs text-gray-900">
                     📢 {item.title}
                   </span>
 
@@ -179,12 +181,14 @@ const NoticesSection = () => {
                     <a
                       href={item.path}
                       download
-                      className="flex items-center gap-1 hover:bg-red-100 border border-gray-400 text-red-500 font-medium px-2 py-1 rounded text-sm"
+                      className="flex items-center gap-1 hover:bg-red-100 border border-gray-400 text-red-500 font-medium px-1 lg:px-2 py-1 rounded text-xs lg:text-sm"
                     >
                       <FaFilePdf className="text-red-600" />
                       Download
                     </a>
-                    <span className="text-sm text-gray-500">{item.date}</span>
+                    <span className="text-xs lg:text-sm text-gray-500">
+                      {item.date}
+                    </span>
                   </div>
                 </div>
               ))}
