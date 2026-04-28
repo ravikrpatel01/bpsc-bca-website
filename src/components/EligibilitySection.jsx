@@ -6,12 +6,12 @@ const EligibilitySection = () => {
   return (
     <div>
       {/* Top Banner */}
-      <div className="bg-linear-to-r bg-blue-500 text-white text-center py-16 px-6">
-        <h1 className="text-3xl md:text-4xl font-semibold">
+      <div className="bg-linear-to-r bg-blue-500 text-white text-center py-4 lg:py-16 px-2 lg:px-6">
+        <h1 className="text-2xl md:text-4xl font-semibold">
           Eligibility Criteria
         </h1>
 
-        <p className="mt-3 text-xl text-gray-200">
+        <p className="mt-2 lg:mt-3 lg:text-xl text-gray-200">
           Check if you meet the requirements for our BCA program
         </p>
 
@@ -22,12 +22,12 @@ const EligibilitySection = () => {
       </div>
 
       {/* Content */}
-      <div className="bg-gray-100 py-16 px-6 md:px-16 text-center">
-        <h2 className="text-4xl font-semibold text-blue-800">
+      <div className="bg-gray-100 pt-4 lg:py-16 px-2 lg:px-6 md:px-16 text-center">
+        <h2 className="text-2xl lg:text-4xl font-semibold text-blue-800">
           Are You Eligible?
         </h2>
 
-        <p className="mt-4 max-w-4xl text-xl mx-auto text-gray-600">
+        <p className="mt-2 lg:mt-4 max-w-4xl lg:text-xl mx-auto text-gray-600">
           Before applying, ensure you meet the eligibility criteria set by{" "}
           <b>AICTE </b>
           and <b>Vinoba Bhave University</b>. Below are the basic requirements
@@ -35,13 +35,13 @@ const EligibilitySection = () => {
         </p>
 
         {/* Buttons */}
-        <div className="mt-8 flex justify-center gap-4 flex-wrap">
-          <button className="bg-blue-700 hover:bg-blue-800 text-white px-5 py-2 rounded-lg flex items-center gap-2 shadow-md font-medium cursor-pointer">
+        <div className="mt-3 lg:mt-8 flex justify-center gap-4 flex-wrap">
+          <button className="bg-blue-700 hover:bg-blue-800 text-white px-3 lg:px-5 py-1 lg:py-2 rounded flex items-center gap-2 shadow-md font-medium cursor-pointer">
             <FaUserGraduate />
             BCA Eligibility
           </button>
 
-          <button className="bg-green-600 hover:bg-green-700 text-white px-5 py-2 rounded-lg flex items-center gap-1 shadow-md font-medium cursor-pointer">
+          <button className="bg-green-600 hover:bg-green-700 text-white px-3 lg:px-5 py-1 lg:py-2 rounded flex items-center gap-1 shadow-md font-medium cursor-pointer">
             Apply Now
             <GiClick />
           </button>
