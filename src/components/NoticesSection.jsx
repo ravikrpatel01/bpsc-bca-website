@@ -129,7 +129,7 @@ const NoticesSection = () => {
               {loopedCollege.map((item, index) => (
                 <div
                   key={index}
-                  className="flex justify-between gap-1 items-center px-2 lg:px-4 py-3 border-b border-gray-300 hover:bg-gray-50"
+                  className="flex justify-between gap-1 items-center px-2 lg:px-4 py-1 lg:py-3 border-b border-gray-300 hover:bg-gray-50"
                 >
                   <p>
                     <span className="font-medium lg:text-sm text-xs text-gray-900">
@@ -175,7 +175,7 @@ const NoticesSection = () => {
               {loopedUniversity.map((item, index) => (
                 <div
                   key={index}
-                  className="flex justify-between gap-1 items-center px-2 lg:px-4 py-3 border-b border-gray-300 hover:bg-gray-50"
+                  className="flex justify-between gap-1 items-center px-2 lg:px-4 py-1 lg:py-3 border-b border-gray-300 hover:bg-gray-50"
                 >
                   <p>
                     <span className="font-medium lg:text-sm text-xs text-gray-900">
