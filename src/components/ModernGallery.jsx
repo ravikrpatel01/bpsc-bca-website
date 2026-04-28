@@ -48,13 +48,13 @@ const ModernGallery = () => {
   const [selected, setSelected] = useState(null);
 
   return (
-    <div className="bg-gray-100 py-10 px-6">
-      <h2 className="text-4xl font-bold text-center text-blue-900 mb-12">
+    <div className="bg-gray-100 py-3 lg:py-10 px-2 lg:px-6">
+      <h2 className="text-2xl lg:text-4xl font-bold text-center text-blue-900 mb-3 lg:mb-12">
         Photo Gallery
       </h2>
 
       {/* Grid */}
-      <div className="max-w-6xl mx-auto grid sm:grid-cols-2 md:grid-cols-3 gap-6">
+      <div className="max-w-6xl mx-auto grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 gap-2 lg:gap-6">
         {images.map((img, i) => (
           <div
             key={i}
@@ -65,7 +65,7 @@ const ModernGallery = () => {
             <img
               src={img.src}
               alt=""
-              className="w-full h-64 object-cover transform group-hover:scale-110 transition duration-500"
+              className="w-full h-40 lg:h-64 object-cover transform group-hover:scale-110 transition duration-500"
             />
 
             {/* Overlay */}
