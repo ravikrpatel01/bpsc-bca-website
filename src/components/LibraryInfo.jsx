@@ -55,7 +55,7 @@ const LibraryInfo = () => {
           {/* Right Image */}
           <div>
             <img
-              src="/library.jpg"
+              src="/library.svg"
               alt="Library"
               className="w-full h-50 lg:h-80 object-cover rounded-xl border border-gray-300"
             />

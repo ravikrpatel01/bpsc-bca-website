@@ -21,11 +21,11 @@ const LibraryPage = () => {
       <TopBar />
       <AnnouncementBar />
       <Navbar />
-      {/* <LibraryInfo />
+      <LibraryInfo />
       <LibraryStats />
-      <LibraryCollections /> */}
-      {/* <LibraryServices /> */}
-      {/* <LibraryTimings /> */}
+      <LibraryCollections />
+      <LibraryServices />
+      <LibraryTimings />
       <LibraryRules />
       <MainFooter />
       <Footer />
