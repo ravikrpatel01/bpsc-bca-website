@@ -6,9 +6,9 @@ const ContactSection = () => {
     <div>
       {/* Top Banner */}
       <div className="bg-blue-500 text-white text-center py-4 lg:py-16 px-2 lg:px-6">
-        <h1 className="text-3xl md:text-4xl font-semibold">Contact Us</h1>
+        <h1 className="text-2xl md:text-4xl font-semibold">Contact Us</h1>
 
-        <p className="mt-3 text-lg text-gray-200">
+        <p className="mt-3 lg:text-lg text-gray-200">
           Get in touch with us for admissions, inquiries, or any assistance
         </p>
 
@@ -22,7 +22,7 @@ const ContactSection = () => {
         <div className="grid md:grid-cols-4 gap-2 lg:gap-6">
           {/* Phone */}
           <div className="bg-white border rounded-xl border-l-4 border-blue-600 shadow-md p-2 lg:p-6 text-center">
-            <div className="bg-blue-100 text-blue-600 w-14 h-14 mx-auto flex items-center border border-blue-400 justify-center rounded-full text-xl">
+            <div className="bg-blue-100 text-blue-600 w-10 h-10 lg:w-14 lg:h-14 mx-auto flex items-center border border-blue-400 justify-center rounded-full text-xl">
               <FaPhone />
             </div>
             <h3 className="mt-1 lg:mt-4 font-semibold text-gray-800">Phone</h3>
@@ -31,7 +31,7 @@ const ContactSection = () => {
 
           {/* Email */}
           <div className="bg-white border rounded-xl border-l-4 border-green-600 shadow-md p-2 lg:p-6 text-center">
-            <div className="bg-green-100 text-green-600 w-14 h-14 mx-auto flex items-center border border-green-400 justify-center rounded-full text-xl">
+            <div className="bg-green-100 text-green-600 w-10 h-10 lg:w-14 lg:h-14 mx-auto flex items-center border border-green-400 justify-center rounded-full text-xl">
               <FaEnvelope />
             </div>
             <h3 className="mt-1 lg:mt-4 font-semibold text-gray-800">Email</h3>
@@ -40,7 +40,7 @@ const ContactSection = () => {
 
           {/* Address */}
           <div className="bg-white border rounded-xl border-l-4 border-yellow-600 shadow-md p-2 lg:p-6 text-center">
-            <div className="bg-yellow-100 text-yellow-600 w-14 h-14 mx-auto flex items-center border border-yellow-400 justify-center rounded-full text-xl">
+            <div className="bg-yellow-100 text-yellow-600 w-10 h-10 lg:w-14 lg:h-14 mx-auto flex items-center border border-yellow-400 justify-center rounded-full text-xl">
               <FaMapMarkerAlt />
             </div>
             <h3 className="mt-1 lg:mt-4 font-semibold text-gray-800">
@@ -51,7 +51,7 @@ const ContactSection = () => {
 
           {/* Office Hours */}
           <div className="bg-white border rounded-xl border-l-4 border-purple-600 shadow-md p-2 lg:p-6 text-center">
-            <div className="bg-purple-100 text-purple-600 w-14 h-14 mx-auto flex items-center border border-purple-400 justify-center rounded-full text-xl">
+            <div className="bg-purple-100 text-purple-600 w-10 h-10 lg:w-14 lg:h-14 mx-auto flex items-center border border-purple-400 justify-center rounded-full text-xl">
               <FaClock />
             </div>
             <h3 className="mt-1 lg:mt-4 font-semibold text-gray-800">

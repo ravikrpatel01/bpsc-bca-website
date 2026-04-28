@@ -130,7 +130,7 @@ const MainFooter = () => {
             Quick Links
           </h3>
 
-          <ul className="mt-4 space-y-3 text-sm">
+          <ul className="mt-4 lg:space-y-3 text-sm">
             {links.map((item, i) => (
               <li
                 key={i}
