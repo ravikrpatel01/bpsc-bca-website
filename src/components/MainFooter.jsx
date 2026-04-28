@@ -75,7 +75,7 @@ const MainFooter = () => {
             </div>
           </div>
 
-          <p className="mt-4 text-sm leading-6">
+          <p className="mt-2 lg:mt-4 text-sm leading-6">
             <span className="font-bold">Baijnath Prasad Snehi College</span> is
             a premier institution dedicated to excellence in higher education.
             We are approved by <span className="font-bold">AICTE</span> and
@@ -85,7 +85,7 @@ const MainFooter = () => {
           </p>
 
           {/* Social Icons */}
-          <div className="flex gap-3 mt-5">
+          <div className="flex gap-3 mt-2 lg:mt-5">
             <a
               href="https://facebook.com"
               target="_blank"
@@ -130,7 +130,7 @@ const MainFooter = () => {
             Quick Links
           </h3>
 
-          <ul className="mt-4 lg:space-y-3 text-sm">
+          <ul className="mt-2 lg:mt-4 lg:space-y-3 text-sm">
             {links.map((item, i) => (
               <li
                 key={i}
@@ -150,7 +150,7 @@ const MainFooter = () => {
             Our Programs
           </h3>
 
-          <ul className="mt-4 space-y-3 text-sm">
+          <ul className="mt-2 lg:mt-4 space-y-3 text-sm">
             {programs.map((item, i) => (
               <Link to={item.path} key={i}>
                 <li className="hover:text-white flex items-center gap-2 cursor-pointer">
@@ -168,7 +168,7 @@ const MainFooter = () => {
             Contact Info
           </h3>
 
-          <div className="mt-4 space-y-5 text-sm">
+          <div className="mt-4 space-y-3 lg:space-y-5 text-sm">
             {/* Address */}
             <div className="flex gap-3 items-start">
               <div className="bg-blue-600 p-2 rounded-md text-white h-9 w-9 flex items-center justify-center shrink-0">
