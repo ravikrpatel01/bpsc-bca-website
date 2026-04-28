@@ -165,7 +165,7 @@ const ContactFormSection = () => {
           </div>
 
           {/* Address Card */}
-          <div className="mt-4 bg-white p-5 rounded-xl shadow-md">
+          <div className="mt-4 bg-white p-2 lg:p-5 rounded-lg shadow-md">
             <div className="flex items-center gap-2 text-blue-700 font-semibold">
               <FaMapMarkerAlt />
               College Address
@@ -177,9 +177,9 @@ const ContactFormSection = () => {
             <p className="text-gray-600">Jainagar Road, Domchanch, Jharkhand</p>
             <p className="text-gray-600">PIN: 825418</p>
 
-            <p className="mt-3 text-blue-600 cursor-pointer">
+            {/* <p className="mt-3 text-blue-600 cursor-pointer">
               Get Directions →
-            </p>
+            </p> */}
           </div>
         </div>
       </div>

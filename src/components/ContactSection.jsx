@@ -1,4 +1,9 @@
-import { FaClock, FaEnvelope, FaMapMarkerAlt, FaPhone } from "react-icons/fa";
+import {
+  FaClock,
+  FaEnvelope,
+  FaMapMarkerAlt,
+  FaPhoneAlt,
+} from "react-icons/fa";
 import { Link } from "react-router-dom";
 
 const ContactSection = () => {
@@ -8,7 +13,7 @@ const ContactSection = () => {
       <div className="bg-blue-500 text-white text-center py-4 lg:py-16 px-2 lg:px-6">
         <h1 className="text-2xl md:text-4xl font-semibold">Contact Us</h1>
 
-        <p className="mt-3 lg:text-lg text-gray-200">
+        <p className="mt-1 lg:mt-3 lg:text-lg text-gray-200">
           Get in touch with us for admissions, inquiries, or any assistance
         </p>
 
@@ -23,7 +28,7 @@ const ContactSection = () => {
           {/* Phone */}
           <div className="bg-white border rounded-xl border-l-4 border-blue-600 shadow-md p-2 lg:p-6 text-center">
             <div className="bg-blue-100 text-blue-600 w-10 h-10 lg:w-14 lg:h-14 mx-auto flex items-center border border-blue-400 justify-center rounded-full text-xl">
-              <FaPhone />
+              <FaPhoneAlt />
             </div>
             <h3 className="mt-1 lg:mt-4 font-semibold text-gray-800">Phone</h3>
             <p className="text-gray-600">+91-91022 24044</p>

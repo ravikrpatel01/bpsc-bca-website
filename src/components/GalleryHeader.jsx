@@ -4,7 +4,7 @@ const GalleryHeader = () => {
   return (
     <div>
       {/* Top Blue Section */}
-      <div className="bg-blue-500 text-white py-4 lg:py-16 text-center">
+      <div className="bg-blue-500 text-white py-4 px-2 lg:py-16 text-center">
         <h1 className="lg:text-4xl text-2xl md:text-5xl font-bold mb-1 lg:mb-4">
           Photo Gallery
         </h1>
