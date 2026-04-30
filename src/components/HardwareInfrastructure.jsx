@@ -2,17 +2,17 @@ import { FaCheck, FaInfoCircle, FaLaptop, FaPrint } from "react-icons/fa";
 
 const HardwareInfrastructure = () => {
   return (
-    <div className="bg-gray-100 py-10 px-6">
-      <h2 className="text-3xl font-bold text-center text-blue-900 mb-12">
+    <div className="bg-gray-100 py-4 lg:py-10 px-2 lg:px-6">
+      <h2 className="text-2xl lg:text-3xl font-bold text-center text-blue-900 mb-2 lg:mb-12">
         Hardware & Infrastructure
       </h2>
 
-      <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-8">
+      <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-2 lg:gap-8">
         {/* Left Card */}
-        <div className="bg-white rounded-xl shadow-md py-2 px-5 border-t-4 border border-blue-500">
+        <div className="bg-white rounded-xl shadow-md py-2 px-2 lg:px-5 border-t-4 border border-blue-500">
           {/* Heading */}
-          <div className="flex items-center gap-3 mb-4">
-            <div className="bg-blue-500 text-white p-3 rounded-full">
+          <div className="flex items-center gap-2 lg:gap-3 mb-2 lg:mb-4">
+            <div className="bg-blue-500 text-white p-2 lg:p-3 rounded-full">
               <FaLaptop className="text-xl" />
             </div>
             <h3 className="text-xl font-semibold text-blue-900">
@@ -21,12 +21,12 @@ const HardwareInfrastructure = () => {
           </div>
 
           {/* Specs Box */}
-          <div className="bg-gray-50 border border-gray-200 px-3 py-1 text-lg rounded-md mb-4">
-            <p className="font-semibold text-xl text-blue-900 mb-2">
+          <div className="bg-gray-50 border border-gray-200 px-3 py-1 lg:text-lg rounded-md mb-4">
+            <p className="font-semibold text-lg lg:text-xl text-blue-900 lg:mb-2">
               Technical Specifications:
             </p>
 
-            <ul className="space-y-2 text-lg text-gray-700">
+            <ul className="space-y-2 lg:text-lg text-gray-700">
               <li className="flex gap-2">
                 <FaCheck className="text-blue-500 mt-1" />
                 <span>
@@ -61,7 +61,7 @@ const HardwareInfrastructure = () => {
           </div>
 
           {/* Info Box */}
-          <div className="flex gap-2 bg-blue-100 border-l-4 text-blue-800 p-3 rounded-md text-sm">
+          <div className="flex gap-2 bg-blue-100 border-l-4 text-blue-800 p-1 lg:p-3 rounded-md text-sm">
             <FaInfoCircle className="mt-1 shrink-0" />
             <p>
               All systems regularly updated and maintained for optimal
@@ -71,13 +71,13 @@ const HardwareInfrastructure = () => {
         </div>
 
         {/* Right Card */}
-        <div className="bg-white rounded-xl shadow-md py-2 px-5 border-t-4 border border-emerald-500">
+        <div className="bg-white rounded-xl shadow-md py-2 px-2 lg:px-5 border-t-4 border border-emerald-500">
           {/* Heading */}
-          <div className="flex items-center gap-3 mb-4">
-            <div className="bg-emerald-500 text-white p-3 rounded-full">
+          <div className="flex items-center gap-2 lg:gap-3 mb-1 lg:mb-4">
+            <div className="bg-emerald-500 text-white p-2 lg:p-3 rounded-full">
               <FaPrint className="text-xl" />
             </div>
-            <h3 className="text-xl font-semibold text-blue-900">
+            <h3 className="text-lg lg:text-xl font-semibold text-blue-900">
               Peripherals & Equipment
             </h3>
           </div>
@@ -95,11 +95,11 @@ const HardwareInfrastructure = () => {
           </div> */}
 
           {/* Networking */}
-          <div className="bg-gray-50 border border-gray-200 px-3 py-1 rounded-md mb-4">
-            <p className="font-semibold text-xl text-blue-900 mb-2">
+          <div className="bg-gray-50 border border-gray-200 px-3 py-1 rounded-md mb-2 lg:mb-4">
+            <p className="font-semibold text-lg lg:text-xl text-blue-900 lg:mb-2">
               Networking:
             </p>
-            <ul className="text-lg text-gray-700 space-y-1">
+            <ul className="lg:text-lg text-gray-700 space-y-1">
               <li>• Managed network switches</li>
               <li>• High-speed Wi-Fi access points</li>
               <li>• Firewall and security systems</li>
@@ -108,10 +108,10 @@ const HardwareInfrastructure = () => {
 
           {/* Multimedia */}
           <div className="bg-gray-50 border border-gray-200 px-3 py-1 rounded-md">
-            <p className="font-semibold text-xl text-blue-900 mb-2">
+            <p className="font-semibold text-lg lg:text-xl text-blue-900 lg:mb-2">
               Multimedia:
             </p>
-            <ul className="text-lg text-gray-700 space-y-1">
+            <ul className="lg:text-lg text-gray-700 space-y-1">
               <li>• LCD projector and screen</li>
               <li>• Audio system for presentations</li>
               <li>• Webcams for video conferencing</li>

@@ -4,9 +4,11 @@ const FacultyPage = () => {
   return (
     <div>
       <div className="bg-linear-to-r bg-blue-500 text-white py-4 lg:py-16 text-center">
-        <h1 className="text-2xl lg:text-4xl font-bold mb-1 lg:mb-4">Our Faculty & Staff</h1>
+        <h1 className="text-2xl lg:text-4xl font-bold mb-1 lg:mb-4">
+          Our Faculty & Staff
+        </h1>
 
-        <p className="max-w-2xl mx-auto lg:text-lg opacity-90">
+        <p className="max-w-2xl mx-auto lg:text-lg">
           Experienced IT professionals and educators shaping future software
           developers
         </p>
