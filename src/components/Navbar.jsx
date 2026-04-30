@@ -2,6 +2,7 @@ import { useEffect, useRef, useState } from "react";
 import { BsGlobe } from "react-icons/bs";
 import { IoIosArrowDown } from "react-icons/io";
 import { Link } from "react-router-dom";
+import { HiMiniBars3 } from "react-icons/hi2";
 
 const importantLinks = [
   { name: "VBU Website", webLink: "https://www.vbu.ac.in/login" },
@@ -234,6 +235,9 @@ const Navbar = () => {
             </div>
           </div>
         )}
+      </div>
+      <div>
+        <HiMiniBars3 className="text-3xl" />
       </div>
     </div>
   );
