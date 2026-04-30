@@ -10,15 +10,15 @@ import {
 const CoreValues = () => {
   return (
     <div className="bg-gray-100 py-4 lg:py-10 px-2 lg:px-6">
-      <h2 className="text-3xl font-bold text-center text-blue-900 mb-4 lg:mb-12">
+      <h2 className="text-2xl lg:text-3xl font-bold text-center text-blue-900 mb-4 lg:mb-12">
         Our Core Values
       </h2>
 
       <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-3 lg:gap-10">
         {/* Left Side */}
-        <div className="space-y-8">
+        <div className="lg:space-y-8 space-y-4">
           <div className="flex gap-4 items-start">
-            <div className="bg-blue-600 text-white w-12 h-12 flex items-center justify-center rounded-lg shrink-0">
+            <div className="bg-blue-600 text-white w-10 h-10 lg:w-12 lg:h-12 flex items-center justify-center rounded-lg shrink-0">
               <FaLightbulb className="text-2xl" />
             </div>
             <div>
@@ -34,7 +34,7 @@ const CoreValues = () => {
           </div>
 
           <div className="flex gap-4 items-start">
-            <div className="bg-yellow-500 text-white w-12 h-12 flex items-center justify-center rounded-lg shrink-0">
+            <div className="bg-yellow-500 text-white w-10 h-10 lg:w-12 lg:h-12 flex items-center justify-center rounded-lg shrink-0">
               <FaRocket className="text-2xl" />
             </div>
             <div>
@@ -50,7 +50,7 @@ const CoreValues = () => {
           </div>
 
           <div className="flex gap-4 items-start">
-            <div className="bg-red-500 text-white w-12 h-12 flex items-center justify-center rounded-lg shrink-0">
+            <div className="bg-red-500 text-white w-10 h-10 lg:w-12 lg:h-12 flex items-center justify-center rounded-lg shrink-0">
               <FaUsers className="text-2xl" />
             </div>
             <div>
@@ -67,7 +67,7 @@ const CoreValues = () => {
 
         <div className="space-y-8">
           <div className="flex gap-4 items-start">
-            <div className="bg-green-600 text-white w-12 h-12 flex items-center justify-center rounded-lg shrink-0">
+            <div className="bg-green-600 text-white w-10 h-10 lg:w-12 lg:h-12 flex items-center justify-center rounded-lg shrink-0">
               <FaShieldAlt className="text-2xl" />
             </div>
             <div>
@@ -81,7 +81,7 @@ const CoreValues = () => {
           </div>
 
           <div className="flex gap-4 items-start">
-            <div className="bg-purple-600 text-white w-12 h-12 flex items-center justify-center rounded-lg shrink-0">
+            <div className="bg-purple-600 text-white w-10 h-10 lg:w-12 lg:h-12 flex items-center justify-center rounded-lg shrink-0">
               <FaHandsHelping className="text-2xl" />
             </div>
             <div>
@@ -96,7 +96,7 @@ const CoreValues = () => {
           </div>
 
           <div className="flex gap-4 items-start">
-            <div className="bg-indigo-600 text-white w-12 h-12 flex items-center justify-center rounded-lg shrink-0">
+            <div className="bg-indigo-600 text-white w-10 h-10 lg:w-12 lg:h-12 flex items-center justify-center rounded-lg shrink-0">
               <FaTrophy className="text-2xl" />
             </div>
             <div>

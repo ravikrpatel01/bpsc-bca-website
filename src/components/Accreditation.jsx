@@ -6,7 +6,7 @@ const Accreditation = () => {
       <h2 className="text-center text-2xl lg:text-3xl text-blue-900 font-bold">
         Recognition and Affiliations
       </h2>
-      <div className="grid md:grid-cols-2 gap-3 lg:gap-8 mt-5">
+      <div className="grid md:grid-cols-2 gap-3 lg:gap-8 mt-2 lg:mt-5">
         {/* AICTE Card */}
         <div className="bg-gray-100 rounded-xl shadow-md p-3 lg:p-8 text-center hover:bg-emerald-50 border border-t-4 border-blue-600">
           <div className="text-blue-600 border bg-blue-200 p-2 text-3xl mb-1 lg:mb-4 inline-flex items-center justify-center rounded-md">
@@ -17,11 +17,11 @@ const Accreditation = () => {
             AICTE Approved
           </h2>
 
-          <p className="mt-2 text-gray-600">
+          <p className="lg:mt-2 text-gray-600">
             All India Council for Technical Education
           </p>
 
-          <p className="mt-2 text-sm text-blue-600">
+          <p className="lg:mt-2 text-sm text-blue-600">
             Ensuring Quality Technical Education
           </p>
         </div>
@@ -36,9 +36,9 @@ const Accreditation = () => {
             Vinoba Bhave University
           </h2>
 
-          <p className="mt-2 text-gray-600">Affiliated for BCA Programmes</p>
+          <p className="lg:mt-2 text-gray-600">Affiliated for BCA Programmes</p>
 
-          <p className="mt-2 text-sm text-emerald-600">
+          <p className="lg:mt-2 text-sm text-emerald-600">
             Strong Academic Framework
           </p>
         </div>

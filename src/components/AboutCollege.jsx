@@ -26,14 +26,14 @@ const AboutCollege = () => {
         <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-2 lg:gap-10 items-center">
           {/* Text Content */}
           <div className="order-2 md:order-1">
-            <h2 className="text-[1.9rem] text-center font-bold text-blue-900 mb-2">
+            <h2 className="text-[1.9rem] text-center font-bold text-blue-900 lg:mb-2">
               Welcome to{" "}
               <span className="text-yellow-500">
                 Baijnath Prasad Snehi College
               </span>
             </h2>
 
-            <p className="text-gray-700 text-lg text-justify lg:leading-relaxed mb-2">
+            <p className="text-gray-700 lg:text-lg text-justify lg:leading-relaxed lg:mb-2">
               <span className="font-bold">Baijnath Prasad Snehi College</span>{" "}
               is a center of excellence in higher education, offering a strong
               foundation in computer applications through its{" "}
@@ -45,7 +45,7 @@ const AboutCollege = () => {
               and practical exposure.
             </p>
 
-            <p className="text-gray-600 text-lg text-justify leading-relaxed mb-2">
+            <p className="text-gray-600 lg:text-lg text-justify leading-relaxed lg:mb-2">
               Our BCA program is designed to equip students with knowledge in
               <span className="font-bold ml-1">
                 programming languages, database management, web development, and
@@ -55,7 +55,7 @@ const AboutCollege = () => {
               problem-solving abilities required in the professional world.
             </p>
 
-            <p className="text-gray-600 text-lg text-justify leading-relaxed mb-6">
+            <p className="text-gray-600 lg:text-lg text-justify leading-relaxed mb-6">
               With <span className="font-bold">experienced faculty</span> and{" "}
               <span className="font-bold">industry-oriented learning</span>, we
               aim to nurture
@@ -66,20 +66,20 @@ const AboutCollege = () => {
               society.
             </p>
 
-            <div className="flex flex-col sm:flex-row gap-3">
+            <div className="flex justify-center gap-2 flex-wrap">
               <Link
                 to="/about/vision-and-mission"
-                className="flex font-medium items-center justify-center gap-2 bg-blue-600 text-white px-3 py-2 rounded hover:bg-blue-500 transition"
+                className="flex-1 min-w-35 flex font-medium items-center justify-center gap-2 bg-blue-600 text-white px-3 py-2 rounded hover:bg-blue-500 transition text-sm sm:text-base"
               >
-                <FaBullseye className="text-xl" />
+                <FaBullseye className="text-lg sm:text-xl" />
                 Vision & Mission
               </Link>
 
               <Link
                 to="/contact"
-                className="flex font-medium items-center justify-center gap-2 bg-green-600 text-white px-3 py-2 rounded hover:bg-green-500 transition"
+                className="flex-1 min-w-35 flex font-medium items-center justify-center gap-2 bg-green-600 text-white px-3 py-2 rounded hover:bg-green-500 transition text-sm sm:text-base"
               >
-                <MdCall className="text-xl" />
+                <MdCall className="text-lg sm:text-xl" />
                 Contact Us
               </Link>
             </div>
@@ -90,7 +90,7 @@ const AboutCollege = () => {
             <img
               src="/college_image.png"
               alt="College Building"
-              className="w-full h-64 md:h-100 object-cover rounded-xl border border-gray-300"
+              className="w-full h-50 lg:h-100 object-cover rounded-xl border border-gray-300"
             />
           </div>
         </div>
