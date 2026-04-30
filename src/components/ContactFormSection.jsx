@@ -143,7 +143,7 @@ const ContactFormSection = () => {
         </div>
 
         {/* RIGHT: MAP + ADDRESS */}
-        <div>
+        <div className="mt-3">
           <h2 className="text-2xl md:text-3xl font-semibold text-blue-800">
             Visit Our Campus
           </h2>

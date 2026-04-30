@@ -31,7 +31,7 @@ const ContactSection = () => {
               <FaPhoneAlt />
             </div>
             <h3 className="mt-1 lg:mt-4 font-semibold text-gray-800">Phone</h3>
-            <p className="text-gray-600">+91-91022 24044</p>
+            <p className="text-gray-600">+91-8340784927</p>
           </div>
 
           {/* Email */}
@@ -40,7 +40,7 @@ const ContactSection = () => {
               <FaEnvelope />
             </div>
             <h3 className="mt-1 lg:mt-4 font-semibold text-gray-800">Email</h3>
-            <p className="text-gray-600">skshekhar15@gmail.com</p>
+            <p className="text-gray-600">ravikumarpatel2001@gmail.com</p>
           </div>
 
           {/* Address */}
@@ -62,7 +62,7 @@ const ContactSection = () => {
             <h3 className="mt-1 lg:mt-4 font-semibold text-gray-800">
               Office Hours
             </h3>
-            <p className="text-gray-600">Mon-Sat: 9:00 AM - 5:00 PM</p>
+            <p className="text-gray-600">Mon-Sat: 09:00 AM - 04:00 PM</p>
           </div>
         </div>
       </div>

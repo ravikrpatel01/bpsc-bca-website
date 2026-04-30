@@ -85,6 +85,8 @@ const Navbar = () => {
   const [activeMenu, setActiveMenu] = useState(null);
   const menuRef = useRef();
   const mobileMenuRef = useRef();
+  const barRef = useRef();
+
   // 🔥 FIXED STATES
   const [hovered, setHovered] = useState(false);
   const [clicked, setClicked] = useState(false);
@@ -119,7 +121,12 @@ const Navbar = () => {
 
   useEffect(() => {
     const handleClickOutside = (e) => {
-      if (mobileMenuRef.current && !mobileMenuRef.current.contains(e.target)) {
+      if (
+        mobileMenuRef.current &&
+        !mobileMenuRef.current.contains(e.target) &&
+        barRef.current &&
+        !barRef.current.contains(e.target)
+      ) {
         setMobileMenuOpen(false);
         setMobileDropdown(null);
       }
@@ -249,9 +256,9 @@ const Navbar = () => {
           </div>
         )}
       </div>
-      <div className="pr-1 md:hidden">
+      <div className="pr-1 md:hidden" ref={barRef}>
         <HiMiniBars3
-          onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+          onClick={() => setMobileMenuOpen((prev) => !prev)}
           className="text-4xl cursor-pointer"
         />
       </div>
