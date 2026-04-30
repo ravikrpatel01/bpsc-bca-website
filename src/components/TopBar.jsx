@@ -9,10 +9,10 @@ const TopBar = () => {
       <div className="flex gap-6">
         <span className="flex items-center gap-1 font-medium">
           <FaPhoneAlt className="text-emerald-400" size={16} />
-          091022 24044
+          +91-8340784927
         </span>
         <span className="hidden md:flex items-center gap-1 font-medium">
-          <MdEmail size={20} /> skshekhar15@gmail.com
+          <MdEmail size={20} /> ravikumarpatel2001@gmail.com
         </span>
         <span className="hidden md:flex items-center gap-1 font-medium">
           <IoLocation className="text-red-500" size={20} />

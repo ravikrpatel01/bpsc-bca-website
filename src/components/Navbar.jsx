@@ -47,7 +47,7 @@ const navItems = [
     path: "/academics",
     dropdown: [
       {
-        name: "Download Syllabus",
+        name: "Download BCA Syllabus",
         path: "/BCA_Syllabus.pdf",
         isDownload: true,
       },

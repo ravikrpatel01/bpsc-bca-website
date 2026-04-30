@@ -13,7 +13,7 @@ import { Link, useNavigate } from "react-router-dom";
 
 const links = [
   { name: "About College", path: "/about-college" },
-  { name: "Vision & Mission", path: "/about/vision-and-mission" },
+  { name: "Our Vision & Mission", path: "/about/vision-and-mission" },
   { name: "Principal's Message", path: "/about/principal-message" },
   { name: "Our Faculty", path: "/faculty/teaching" },
   { name: "Admission Process", path: "/admissions/admission-procedure" },
@@ -40,7 +40,7 @@ const programs = [
     path: "/facilities/library",
   },
   {
-    name: "Laboratories",
+    name: "Computer Lab Facilities",
     path: "/facilities/lab",
   },
   {
@@ -150,7 +150,7 @@ const MainFooter = () => {
             Our Programs
           </h3>
 
-          <ul className="mt-2 lg:mt-4 space-y-3 text-sm">
+          <ul className="mt-2 lg:mt-4 lg:space-y-3 text-sm">
             {programs.map((item, i) => (
               <Link to={item.path} key={i}>
                 <li className="hover:text-white flex items-center gap-2 cursor-pointer">
@@ -190,8 +190,9 @@ const MainFooter = () => {
               </div>
               <div>
                 <p className="text-white font-medium">Phone</p>
-                <p>1. +91-9102224044</p>
-                <p>2. +91-8340784927</p>
+                <p>1. +91-8340784927</p>
+                <p>2. +91-8825393470</p>
+                <p>3. +91-9525743848</p>
               </div>
             </div>
 
