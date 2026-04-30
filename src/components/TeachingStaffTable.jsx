@@ -46,7 +46,7 @@ const TeachingStaffTable = () => {
       </h2>
 
       <div className="overflow-x-auto">
-        <div className="max-w-6xl mx-auto bg-white rounded-xl shadow-md overflow-hidden min-w-162.5">
+        <div className="max-w-6xl mx-auto bg-white rounded-xl shadow-md overflow-hidden min-w-200">
           {/* Header */}
           <div className="grid grid-cols-3 bg-gray-200 text-gray-700 font-semibold px-2 lg:px-6 py-2 lg:py-3 text-sm">
             <div className="whitespace-nowrap">STAFF MEMBER</div>
