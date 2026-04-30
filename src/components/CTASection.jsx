@@ -46,7 +46,7 @@ const CTASection = () => {
       <div>
         <Link
           to="/contact"
-          className="bg-yellow-400 flex items-center cursor-pointer gap-1 hover:bg-yellow-500 text-white font-semibold px-3 lg:px-5 py-2 lg:py-3 rounded-full shadow-md"
+          className="bg-emerald-500 flex items-center cursor-pointer gap-1 hover:bg-emerald-600 text-white font-semibold px-3 lg:px-5 py-2 lg:py-3 rounded shadow-md"
         >
           Contact for Admission <GiClick size={20} className="text-white" />
         </Link>

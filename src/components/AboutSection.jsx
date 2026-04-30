@@ -8,7 +8,7 @@ import { Link } from "react-router-dom";
 
 const AboutSection = () => {
   return (
-    <div className="bg-gray-100 py-4 lg:py-16 px-3 flex flex-col items-center justify-center md:px-16 text-center">
+    <div className="bg-gray-100 py-4 lg:py-16 px-2 lg:px-3 flex flex-col items-center justify-center md:px-16 text-center">
       {/* Heading */}
       <h1 className="text-2xl lg:text-3xl md:text-4xl font-semibold text-blue-800">
         <span className="text-yellow-500">Baijnath Prasad Snehi College</span> –
@@ -28,8 +28,6 @@ const AboutSection = () => {
 
       {/* Features */}
       <div className="mt-4 lg:mt-8 text-sm lg:text-lg flex flex-wrap justify-center gap-2 lg:gap-6 text-gray-700">
-       
-
         <div className="flex items-center gap-2">
           <FaChalkboardTeacher className="text-green-600" />
           <span>Experienced Faculty</span>
@@ -40,7 +38,7 @@ const AboutSection = () => {
           <span>Digital Learning Environment</span>
         </div>
 
-         <div className="flex items-center gap-2">
+        <div className="flex items-center gap-2">
           <FaLaptopCode className="text-blue-600" />
           <span>Industry-Oriented Curriculum</span>
         </div>

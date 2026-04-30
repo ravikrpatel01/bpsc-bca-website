@@ -4,13 +4,13 @@ import { SiGoogleclassroom } from "react-icons/si";
 
 const CampusSection = () => {
   return (
-    <div className="bg-gray-100 py-6 lg:py-16 px-4 md:px-16">
+    <div className="bg-white pt-2 mb-4 lg:py-16 px-2 md:px-16">
       {/* Heading */}
       <h1 className="text-center text-2xl lg:text-3xl md:text-4xl font-semibold text-blue-800 lg:mb-12 mb-4">
         Campus & Learning Environment
       </h1>
 
-      <div className="grid md:grid-cols-2 gap-10 items-center">
+      <div className="grid md:grid-cols-2 gap-4 lg:gap-10 items-center">
         {/* Left Content */}
         <div>
           <ul className="lg:space-y-4 space-y-2 text-gray-700 lg:text-lg">
@@ -55,25 +55,25 @@ const CampusSection = () => {
         <div className="grid grid-cols-2 gap-2 lg:gap-4">
           <img
             src="https://images.unsplash.com/photo-1596495578065-6e0763fa1178"
-            className="rounded-lg shadow-md h-40 w-full object-cover"
+            className="rounded-lg shadow-md h-30 lg:h-40 w-full object-cover"
             alt=""
           />
 
           <img
             src="https://images.unsplash.com/photo-1581092335397-9583eb92d232"
-            className="rounded-lg shadow-md h-40 w-full object-cover"
+            className="rounded-lg shadow-md h-30 lg:h-40 w-full object-cover"
             alt=""
           />
 
           <img
             src="https://images.unsplash.com/photo-1577896851231-70ef18881754"
-            className="rounded-lg shadow-md h-40 w-full object-cover"
+            className="rounded-lg shadow-md h-30 lg:h-40 w-full object-cover"
             alt=""
           />
 
           <img
             src="https://images.unsplash.com/photo-1588072432836-e10032774350"
-            className="rounded-lg shadow-md h-40 w-full object-cover"
+            className="rounded-lg shadow-md h-30 lg:h-40 w-full object-cover"
             alt=""
           />
         </div>

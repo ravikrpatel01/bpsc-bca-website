@@ -1,6 +1,6 @@
 const LeadershipSection = () => {
   return (
-    <div className="bg-gray-100 py-16 px-2 md:px-8 text-center">
+    <div className="bg-white py-4 lg:py-16 px-2 md:px-8 text-center">
       <div className="grid md:grid-cols-2 gap-8 lg:gap-16">
         {/* Principal Section */}
         <div>

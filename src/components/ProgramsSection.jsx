@@ -1,6 +1,6 @@
 const ProgramsSection = () => {
   return (
-    <div className="bg-gray-100 lg:py-16 px-2 md:px-16">
+    <div className="bg-gray-100 lg:py-16 px-2 py-2 md:px-16">
       {/* Heading */}
       <h1 className="text-center text-2xl lg:text-3xl md:text-4xl font-semibold text-blue-800 mb-4 lg:mb-12">
         Academic Programs & Advantages
