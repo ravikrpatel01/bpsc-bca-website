@@ -191,7 +191,7 @@ const MainFooter = () => {
               <div>
                 <p className="text-white font-medium">Phone</p>
                 <p>1. +91-8340784927</p>
-                <p>2. +91-8825393470</p>
+                <p>2. +91-9798700402</p>
                 <p>3. +91-9525743848</p>
               </div>
             </div>
