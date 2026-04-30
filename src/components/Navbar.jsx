@@ -1,8 +1,8 @@
 import { useEffect, useRef, useState } from "react";
 import { BsGlobe } from "react-icons/bs";
+import { HiMiniBars3 } from "react-icons/hi2";
 import { IoIosArrowDown } from "react-icons/io";
 import { Link } from "react-router-dom";
-import { HiMiniBars3 } from "react-icons/hi2";
 
 const importantLinks = [
   { name: "VBU Website", webLink: "https://www.vbu.ac.in/login" },
@@ -84,12 +84,13 @@ const navItems = [
 const Navbar = () => {
   const [activeMenu, setActiveMenu] = useState(null);
   const menuRef = useRef();
-
+  const mobileMenuRef = useRef();
   // 🔥 FIXED STATES
   const [hovered, setHovered] = useState(false);
   const [clicked, setClicked] = useState(false);
   const dropdownRef = useRef();
-
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const [mobileDropdown, setMobileDropdown] = useState(null);
   const isDropdownOpen = hovered || clicked;
 
   // Outside click close (Important Links)
@@ -112,6 +113,18 @@ const Navbar = () => {
         setActiveMenu(null);
       }
     };
+    document.addEventListener("mousedown", handleClickOutside);
+    return () => document.removeEventListener("mousedown", handleClickOutside);
+  }, []);
+
+  useEffect(() => {
+    const handleClickOutside = (e) => {
+      if (mobileMenuRef.current && !mobileMenuRef.current.contains(e.target)) {
+        setMobileMenuOpen(false);
+        setMobileDropdown(null);
+      }
+    };
+
     document.addEventListener("mousedown", handleClickOutside);
     return () => document.removeEventListener("mousedown", handleClickOutside);
   }, []);
@@ -236,9 +249,74 @@ const Navbar = () => {
           </div>
         )}
       </div>
-      <div>
-        <HiMiniBars3 className="text-3xl" />
+      <div className="pr-1 md:hidden">
+        <HiMiniBars3
+          onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+          className="text-4xl cursor-pointer"
+        />
       </div>
+      {mobileMenuOpen && (
+        <div
+          ref={mobileMenuRef}
+          className="absolute top-full mt-0.5 text-white left-0 w-full bg-blue-800 shadow-md z-50 md:hidden"
+        >
+          {navItems.map((item, index) => (
+            <div key={index} className="border-b border-gray-400">
+              {/* Main Item */}
+              <div
+                onClick={() =>
+                  item.dropdown
+                    ? setMobileDropdown(mobileDropdown === index ? null : index)
+                    : setMobileMenuOpen(false)
+                }
+                className="flex justify-between items-center px-4 py-2 cursor-pointer hover:bg-gray-100"
+              >
+                {item.dropdown ? (
+                  <span>{item.name}</span>
+                ) : (
+                  <Link to={item.path}>{item.name}</Link>
+                )}
+
+                {/* Dropdown Icon */}
+                {item.dropdown && (
+                  <IoIosArrowDown
+                    className={`transition ${
+                      mobileDropdown === index ? "rotate-180" : ""
+                    }`}
+                  />
+                )}
+              </div>
+
+              {/* Dropdown Items */}
+              {item.dropdown && mobileDropdown === index && (
+                <div className="bg-blue-500">
+                  {item.dropdown.map((subItem, subIndex) =>
+                    subItem.isDownload ? (
+                      <a
+                        key={subIndex}
+                        href={subItem.path}
+                        download
+                        className="block px-5 py-2 text-sm hover:bg-gray-100"
+                      >
+                        {subItem.name}
+                      </a>
+                    ) : (
+                      <Link
+                        key={subIndex}
+                        to={subItem.path}
+                        onClick={() => setMobileMenuOpen(false)}
+                        className="block px-5 border-b border-gray-300 py-2 text-sm hover:bg-gray-100"
+                      >
+                        {subItem.name}
+                      </Link>
+                    ),
+                  )}
+                </div>
+              )}
+            </div>
+          ))}
+        </div>
+      )}
     </div>
   );
 };
