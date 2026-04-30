@@ -1,4 +1,4 @@
-import { FaEnvelope, FaPhone, FaQuoteLeft } from "react-icons/fa";
+import { FaEnvelope, FaPhoneAlt, FaQuoteLeft } from "react-icons/fa";
 import { FaGraduationCap } from "react-icons/fa6";
 import { GiNotebook, GiTeacher } from "react-icons/gi";
 
@@ -40,14 +40,14 @@ const PrincipalMsg = () => {
             </p>
           </div>
 
-          <div className="text-lg text-gray-600 space-y-2 border-t pt-1 lg:pt-3">
+          <div className="text-lg text-gray-600 lg:space-y-2 border-t pt-1 lg:pt-3">
             <div className="flex items-center text-sm gap-2 font-medium">
               <FaEnvelope className="text-blue-600 lg:text-lg" />
               skshekhar15@gmail.com
             </div>
             <div className="flex items-center text-sm gap-2 font-medium">
-              <FaPhone className="text-green-700 lg:text-lg" />
-              091022 24044
+              <FaPhoneAlt className="text-green-700 lg:text-lg" />
+              +91-8340784927
             </div>
           </div>
         </div>

@@ -10,11 +10,11 @@ import {
 const WhatWeOffer = () => {
   return (
     <div className="bg-gray-100 py-3 lg:py-5 px-2 lg:px-6">
-      <h2 className="text-xl lg:text-3xl font-bold text-center text-blue-900 mb-3 lg:mb-12">
+      <h2 className="text-xl lg:text-3xl font-bold text-center text-blue-900 mb-2 lg:mb-12">
         What We Offer Our Students
       </h2>
 
-      <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-8">
+      <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-2 lg:gap-8">
         {/* Card 1 */}
         <div className="bg-white border p-2 lg:p-6 rounded-xl shadow-md border-t-4 border-blue-500">
           <div className="flex items-start gap-2 lg:gap-4">
