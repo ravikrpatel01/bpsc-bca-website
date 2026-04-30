@@ -20,22 +20,20 @@ const Footer = () => {
 
         {/* Right Content */}
         <div className="text-sm hidden lg:block px-2 lg:px-4 py-3 text-center sm:text-left">
-          {/* Line 1 */}
           <p className="flex flex-col sm:flex-row items-center justify-center sm:justify-start gap-1">
             <span>Designed & Developed by</span>
 
             <span className="text-white flex items-center gap-1 font-semibold">
-              RAVI KUMAR PATEL
+              BCA Department
               <FaHeart className="text-white heart" size={16} />
             </span>
           </p>
 
-          {/* Line 2 */}
           <p className="flex flex-col sm:flex-row items-center justify-center sm:justify-end gap-1 mt-2">
-            <span className="font-bold">Asst. Professor & HOD,</span>
+            <span className="font-bold">B. P. S. College,</span>
 
             <span className="flex items-center gap-1">
-              BCA Department
+              Domchanch, Koderma
               <FaLaptopCode className="text-white" size={18} />
             </span>
           </p>
