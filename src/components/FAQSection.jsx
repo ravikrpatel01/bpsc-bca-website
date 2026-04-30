@@ -8,7 +8,7 @@ const FAQSection = () => {
     {
       question: "What are the college admission timings?",
       answer:
-        "The admission office is open Monday to Saturday from 9:00 AM to 5:00 PM. We recommend calling ahead for campus visits.",
+        "The admission office is open Monday to Saturday from 9:00 AM to 4:00 PM. We recommend calling ahead for campus visits.",
     },
     {
       question: "How can I schedule a campus tour?",
