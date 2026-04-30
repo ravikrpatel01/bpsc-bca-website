@@ -55,7 +55,7 @@ const ComputerLabInfo = () => {
           {/* Right Image */}
           <div>
             <img
-              src="/computer-lab.jpg"
+              src="/computer_lab.svg"
               alt="Computer Lab"
               className="w-full h-80 object-cover rounded-xl border border-gray-300"
             />
