@@ -269,10 +269,10 @@ const Navbar = () => {
                     ? setMobileDropdown(mobileDropdown === index ? null : index)
                     : setMobileMenuOpen(false)
                 }
-                className="flex justify-between items-center px-4 py-2 cursor-pointer hover:bg-gray-100"
+                className="flex justify-between items-center px-4 py-2 cursor-pointer hover:bg-blue-700"
               >
                 {item.dropdown ? (
-                  <span>{item.name}</span>
+                  <span className="">{item.name}</span>
                 ) : (
                   <Link to={item.path}>{item.name}</Link>
                 )}
@@ -296,7 +296,7 @@ const Navbar = () => {
                         key={subIndex}
                         href={subItem.path}
                         download
-                        className="block px-5 py-2 text-sm hover:bg-gray-100"
+                        className="block px-5 py-2 text-sm hover:bg-blue-600"
                       >
                         {subItem.name}
                       </a>
@@ -305,7 +305,7 @@ const Navbar = () => {
                         key={subIndex}
                         to={subItem.path}
                         onClick={() => setMobileMenuOpen(false)}
-                        className="block px-5 border-b border-gray-300 py-2 text-sm hover:bg-gray-100"
+                        className="block px-5 border-b border-gray-300 py-2 text-sm hover:bg-blue-600"
                       >
                         {subItem.name}
                       </Link>
