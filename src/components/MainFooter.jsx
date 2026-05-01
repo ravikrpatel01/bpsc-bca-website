@@ -216,7 +216,7 @@ const MainFooter = () => {
               <div>
                 <p className="text-white font-medium">Office Hours</p>
                 <p>Day: Monday - Saturday</p>
-                <p>Time: 9:00 AM - 5:00 PM</p>
+                <p>Time: 09:00 AM - 04:00 PM</p>
                 <p>Sunday: Closed</p>
               </div>
             </div>
