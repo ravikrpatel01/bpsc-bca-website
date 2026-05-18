@@ -7,6 +7,11 @@ const images = [
     date: "5th September 2025",
   },
   {
+    src: "/teachers_day_2025.jpeg",
+    title: "Happy Teachers Day",
+    date: "5th September 2025",
+  },
+  {
     src: "/secretary_sir_republicday_2026.jpeg",
     title: "Mr. Himanshu Kumar, Secretary",
     date: "26th January 2026",
@@ -41,6 +46,31 @@ const images = [
     src: "/republicday2026.jpeg",
     title: "All Faculties and Staffs",
     date: "26th January 2026",
+  },
+  {
+    src: "/independence_day_2025.jpeg",
+    title: "Republic Day Celebration",
+    date: "26th January 2025",
+  },
+  {
+    src: "/independence_day.jpeg",
+    title: "Republic Day Celebration",
+    date: "26th January 2025",
+  },
+  {
+    src: "/saraswati_puja.jpeg",
+    title: "Saraswati Puja Celebration",
+    date: "2nd February 2025",
+  },
+  {
+    src: "/saraswati_maa_visarjan.jpeg",
+    title: "Saraswati Puja Murti Visarjan",
+    date: "3rd February 2025",
+  },
+  {
+    src: "/all_staff_group_image.jpeg",
+    title: "Republic Day Celebration",
+    date: "26th January 2025",
   },
 ];
 
