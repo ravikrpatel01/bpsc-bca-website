@@ -80,6 +80,11 @@ const NoticesSection = () => {
 
   const university_notices = [
     {
+      title: "Practical Programme for UG Sem 1 | BCA (2025-28)",
+      date: "Date: 11-05-26",
+      path: "/university_notices/notice7909.pdf",
+    },
+    {
       title: "Revised Exam Schedule Notice | BCA (2025-28) | Sem: 01",
       date: "Date: 16-04-26",
       path: "/university_notices/vbu_revised_examination_centre.pdf",
