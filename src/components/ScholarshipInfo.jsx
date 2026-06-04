@@ -10,7 +10,7 @@ const ScholarshipInfo = () => {
       <div className="max-w-5xl mx-auto bg-white border rounded-xl shadow-md p-2 lg:p-6 border-l-4 border-yellow-500">
         <ul className="lg:space-y-5 space-y-2 text-gray-700">
           <li className="flex gap-3">
-            <FaInfoCircle className="text-yellow-500 text-5xl mt-1" />
+            <FaInfoCircle className="lg:text-2xl text-5xl mt-1 text-yellow-500" />
             <p>
               <span className="font-semibold">Application Deadline:</span>{" "}
               Scholarship applications must be submitted within 30 days of
@@ -19,7 +19,7 @@ const ScholarshipInfo = () => {
           </li>
 
           <li className="flex gap-3">
-            <FaInfoCircle className="text-yellow-500 text-5xl mt-1" />
+            <FaInfoCircle className="text-yellow-500 text-5xl lg:text-2xl mt-1" />
             <p>
               <span className="font-semibold">Renewal:</span> Most scholarships
               are renewable each year subject to maintaining required attendance
@@ -28,7 +28,7 @@ const ScholarshipInfo = () => {
           </li>
 
           <li className="flex gap-3">
-            <FaInfoCircle className="text-yellow-500 text-5xl mt-1" />
+            <FaInfoCircle className="text-yellow-500 text-5xl lg:text-2xl mt-1" />
             <p>
               <span className="font-semibold">Multiple Scholarships:</span>{" "}
               Students can apply for multiple scholarships but can avail only
@@ -37,7 +37,7 @@ const ScholarshipInfo = () => {
           </li>
 
           <li className="flex gap-3">
-            <FaInfoCircle className="text-yellow-500 text-5xl mt-1" />
+            <FaInfoCircle className="text-yellow-500 text-5xl lg:text-2xl mt-1" />
             <p>
               <span className="font-semibold">Verification:</span> All
               certificates and documents are subject to verification. False
@@ -46,7 +46,7 @@ const ScholarshipInfo = () => {
           </li>
 
           <li className="flex gap-3">
-            <FaInfoCircle className="text-yellow-500 text-5xl mt-1" />
+            <FaInfoCircle className="text-yellow-500 text-5xl lg:text-2xl mt-1" />
             <p>
               <span className="font-semibold">Contact:</span> For
               scholarship-related queries, contact the College Scholarship Cell

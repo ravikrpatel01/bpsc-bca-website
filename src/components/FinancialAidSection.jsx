@@ -35,7 +35,7 @@ const FinancialAidSection = () => {
           to support deserving and needy students.
         </p>
 
-        <p className="max-w-3xl lg:text-xl text-justify mx-auto text-gray-600 lg:leading-relaxed">
+        <p className="max-w-3xl lg:text-xl text-justify lg:text-center mx-auto text-gray-600 lg:leading-relaxed">
           Our scholarship programs include government schemes, merit-based
           awards, need-based assistance, and special category scholarships to
           ensure every qualified student can pursue their teaching dreams.

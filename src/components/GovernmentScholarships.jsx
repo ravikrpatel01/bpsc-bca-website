@@ -16,7 +16,7 @@ const GovernmentScholarships = () => {
         {/* Card 1 */}
         <div className="bg-white border rounded-xl shadow-md p-2 lg:p-6 border-l-4 border-blue-500">
           <div className="flex items-center gap-3 lg:mb-3">
-            <FaGraduationCap className="text-blue-500 text-6xl" />
+            <FaGraduationCap className="text-blue-500 text-6xl lg:text-3xl" />
             <h3 className="font-semibold text-lg lg:text-xl text-blue-800">
               Post-Matric Scholarship for OBC/SC/ST Students (E-Kalyan,
               Jharkhand)
@@ -105,7 +105,7 @@ const GovernmentScholarships = () => {
         {/* Card 3 */}
         <div className="bg-white border rounded-xl shadow-md p-2 lg:p-6 border-l-4 border-yellow-500">
           <div className="flex items-center gap-3 mb-1 lg:mb-3">
-            <FaWallet className="text-yellow-500 text-3xl" />
+            <FaWallet className="text-yellow-500 text-3xl lg:text-2xl" />
             <h3 className="font-semibold text-lg lg:text-xl text-yellow-700">
               Economically Weaker Section (EWS) Scholarship
             </h3>
@@ -147,7 +147,7 @@ const GovernmentScholarships = () => {
         {/* Card 4 */}
         <div className="bg-white border rounded-xl shadow-md p-2 lg:p-6 border-l-4 border-purple-500">
           <div className="flex items-center gap-3 mb-1 lg:mb-3">
-            <FaUsers className="text-purple-500 text-4xl" />
+            <FaUsers className="text-purple-500 text-4xl lg:text-3xl" />
             <h3 className="font-semibold text-lg lg:text-xl text-purple-700">
               Minority Scholarship (Pre & Post Matric)
             </h3>
