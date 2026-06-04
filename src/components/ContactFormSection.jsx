@@ -18,6 +18,13 @@ const ContactFormSection = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
 
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+    if (!emailRegex.test(formData.user_email)) {
+      alert("Please enter a valid email address");
+      return;
+    }
+
     emailjs
       .send(
         import.meta.env.VITE_EMAILJS_SERVICE_ID,
@@ -27,15 +34,12 @@ const ContactFormSection = () => {
       )
       .then(
         () => {
-          console.log("SERVICE:", import.meta.env.VITE_EMAILJS_SERVICE_ID);
-          console.log("TEMPLATE:", import.meta.env.VITE_EMAILJS_TEMPLATE_ID);
-          console.log("PUBLIC:", import.meta.env.VITE_EMAILJS_PUBLIC_KEY);
-          alert("Message sent successfully ✅");
+          alert("✅Message Sent Successfully! ");
         },
         (error) => {
           console.error("EmailJS Error:", error);
           alert(
-            `Error: ${error?.text || error?.message || JSON.stringify(error)}`,
+            `❎Error: ${error?.text || error?.message || JSON.stringify(error)}`,
           );
         },
       );
