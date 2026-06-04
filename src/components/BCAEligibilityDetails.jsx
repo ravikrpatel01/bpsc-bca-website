@@ -39,8 +39,10 @@ const BCAEligibilityDetails = () => {
             </p>
             <p className="text-gray-600 lg:text-lg mt-0 lg:mt-2">
               Candidates must have passed{" "}
-              <span className="font-bold">10+2 (Intermediate)</span> from a
-              recognized board.
+              <span className="font-bold">
+                10+2 (Intermediate) in any stream (Science, Commerce, or Arts)
+              </span>{" "}
+              from a recognized board.
             </p>
           </div>
 
