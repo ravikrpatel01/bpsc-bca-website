@@ -27,18 +27,16 @@ const ContactFormSection = () => {
       )
       .then(
         () => {
+          console.log("SERVICE:", import.meta.env.VITE_EMAILJS_SERVICE_ID);
+          console.log("TEMPLATE:", import.meta.env.VITE_EMAILJS_TEMPLATE_ID);
+          console.log("PUBLIC:", import.meta.env.VITE_EMAILJS_PUBLIC_KEY);
           alert("Message sent successfully ✅");
-          setFormData({
-            user_name: "",
-            user_email: "",
-            user_phone: "",
-            subject: "",
-            message: "",
-          });
         },
         (error) => {
-          console.log(error);
-          alert("Failed to send message ❌");
+          console.error("EmailJS Error:", error);
+          alert(
+            `Error: ${error?.text || error?.message || JSON.stringify(error)}`,
+          );
         },
       );
   };
