@@ -1,5 +1,3 @@
-import { FaUserGraduate } from "react-icons/fa";
-import { GiClick } from "react-icons/gi";
 import { Link } from "react-router-dom";
 
 const EligibilitySection = () => {
@@ -22,7 +20,7 @@ const EligibilitySection = () => {
       </div>
 
       {/* Content */}
-      <div className="bg-gray-100 pt-4 lg:py-16 px-2 lg:px-6 md:px-16 text-center">
+      <div className="bg-gray-100 pt-4 lg:py-5 px-2 lg:px-6 md:px-16 text-center">
         <h2 className="text-2xl lg:text-4xl font-semibold text-blue-800">
           Are You Eligible?
         </h2>
@@ -31,11 +29,11 @@ const EligibilitySection = () => {
           Before applying, ensure you meet the eligibility criteria set by{" "}
           <b>AICTE </b>
           and <b>Vinoba Bhave University</b>. Below are the basic requirements
-          for admission to the BCA program.
+          for admission to the <b>BCA</b> program.
         </p>
 
         {/* Buttons */}
-        <div className="mt-3 lg:mt-8 flex justify-center gap-4 flex-wrap">
+        {/* <div className="mt-3 lg:mt-8 flex justify-center gap-4 flex-wrap">
           <button className="bg-blue-700 hover:bg-blue-800 text-white px-3 lg:px-5 py-1 lg:py-2 rounded flex items-center gap-2 shadow-md font-medium cursor-pointer">
             <FaUserGraduate />
             BCA Eligibility
@@ -45,7 +43,7 @@ const EligibilitySection = () => {
             Apply Now
             <GiClick />
           </button>
-        </div>
+        </div> */}
       </div>
     </div>
   );

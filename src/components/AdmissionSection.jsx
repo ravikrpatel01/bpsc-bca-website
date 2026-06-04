@@ -29,7 +29,7 @@ const AdmissionSection = () => {
             <h3 className="mt-1 lg:mt-3 text-xl font-semibold text-gray-800">
               Application Period
             </h3>
-            <p className="text-gray-600 text-sm mt-1">1 May – 30 June 2026</p>
+            <p className="text-gray-600 text-sm mt-1">1 June – 30 June 2026</p>
           </div>
 
           {/* Seats */}
@@ -56,7 +56,7 @@ const AdmissionSection = () => {
             <h3 className="mt-1 lg:mt-3 text-xl font-semibold text-gray-800">
               Application Mode
             </h3>
-            <p className="text-gray-600 text-sm mt-1">Online & Offline</p>
+            <p className="text-gray-600 text-sm mt-1">Offline</p>
           </div>
         </div>
 
