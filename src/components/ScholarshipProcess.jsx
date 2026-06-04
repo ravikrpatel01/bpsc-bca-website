@@ -2,16 +2,16 @@ import { FaCheckCircle } from "react-icons/fa";
 
 const ScholarshipProcess = () => {
   return (
-    <div className="bg-gray-100 py-8 px-6">
-      <h2 className="text-3xl font-bold text-center text-blue-900 mb-12">
+    <div className="bg-gray-100 py-3 lg:py-8 px-2 lg:px-6">
+      <h2 className="text-2xl lg:text-3xl font-bold text-center text-blue-900 mb-3 lg:mb-12">
         How to Apply for Scholarships
       </h2>
 
       {/* Steps */}
-      <div className="grid md:grid-cols-3 gap-10 text-center max-w-6xl mx-auto mb-12">
+      <div className="grid md:grid-cols-3 gap-3 lg:gap-10 text-center max-w-6xl mx-auto mb-3 lg:mb-12">
         {/* Step 1 */}
         <div>
-          <div className="w-16 h-16 mx-auto flex items-center justify-center rounded-full bg-blue-600 text-white text-xl font-bold mb-4">
+          <div className="w-12 h-12 lg:w-16 lg:h-16 mx-auto flex items-center justify-center rounded-full bg-blue-600 text-white text-xl font-bold mb-1 lg:mb-4">
             1
           </div>
           <h3 className="font-semibold text-lg text-blue-900 mb-2">
@@ -25,7 +25,7 @@ const ScholarshipProcess = () => {
 
         {/* Step 2 */}
         <div>
-          <div className="w-16 h-16 mx-auto flex items-center justify-center rounded-full bg-green-600 text-white text-xl font-bold mb-4">
+          <div className="w-12 h-12 lg:w-16 lg:h-16 mx-auto flex items-center justify-center rounded-full bg-green-600 text-white text-xl font-bold mb-1 lg:mb-4">
             2
           </div>
           <h3 className="font-semibold text-lg text-blue-900 mb-2">
@@ -39,7 +39,7 @@ const ScholarshipProcess = () => {
 
         {/* Step 3 */}
         <div>
-          <div className="w-16 h-16 mx-auto flex items-center justify-center rounded-full bg-yellow-600 text-white text-xl font-bold mb-4">
+          <div className="w-12 h-12 lg:w-16 lg:h-16 mx-auto flex items-center justify-center rounded-full bg-yellow-600 text-white text-xl font-bold mb-1 lg:mb-4">
             3
           </div>
           <h3 className="font-semibold text-lg text-blue-900 mb-2">
@@ -53,13 +53,13 @@ const ScholarshipProcess = () => {
       </div>
 
       {/* Documents Box */}
-      <div className="max-w-5xl mx-auto bg-white border border-l-4 border-blue-500 shadow-md rounded-xl p-6">
-        <h3 className="text-xl font-semibold text-blue-900 mb-6">
+      <div className="max-w-5xl mx-auto bg-white border border-l-4 border-blue-500 shadow-md rounded-xl p-2 lg:p-6">
+        <h3 className="text-xl font-semibold text-blue-900 mb-2 lg:mb-6">
           Required Documents:
         </h3>
 
-        <div className="grid md:grid-cols-2 gap-6">
-          <ul className="space-y-3">
+        <div className="grid md:grid-cols-2 lg:gap-6">
+          <ul className="lg:space-y-3">
             <li className="flex items-center gap-2 text-gray-700">
               <FaCheckCircle className="text-blue-600" />
               College Bonafide Certificate
@@ -82,7 +82,7 @@ const ScholarshipProcess = () => {
             </li>
           </ul>
 
-          <ul className="space-y-3">
+          <ul className="lg:space-y-3">
             <li className="flex items-center gap-2 text-gray-700">
               <FaCheckCircle className="text-blue-600" />
               Residential Certificate
