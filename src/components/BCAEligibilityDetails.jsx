@@ -20,24 +20,24 @@ const BCAEligibilityDetails = () => {
       </div>
 
       {/* Main Card */}
-      <div className="mt-3 lg:mt-10 bg-white border rounded-xl shadow-md p-4 lg:p-8 border-t-4 border-blue-600">
+      <div className="mt-3 lg:mt-10 bg-white border rounded-xl shadow-md p-2 lg:p-8 border-t-4 border-blue-600">
         <h3 className="text-xl lg:text-2xl font-semibold text-blue-800 flex items-center gap-2">
           <FaLaptopCode />
           Academic Qualifications
         </h3>
 
-        <h4 className="font-semibold text-lg lg:text-xl text-gray-800 mt-4 lg:mt-6 mb-4">
+        <h4 className="font-semibold text-lg lg:text-xl text-gray-800 mt-2 lg:mt-6 mb-1 lg:mb-4">
           Educational Requirements:
         </h4>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-4 lg:gap-4">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-2 lg:gap-4">
           {/* Card 1 */}
-          <div className="bg-gray-100 border border-gray-300 p-4 rounded-lg hover:shadow-md transition-all">
+          <div className="bg-gray-100 border border-gray-300 p-2 lg:p-4 rounded-lg hover:shadow-md transition-all">
             <p className="font-medium flex text-lg lg:text-xl items-center gap-2">
               <FaCheckCircle className="text-blue-600" />
               10+2 Qualification
             </p>
-            <p className="text-gray-600 lg:text-lg mt-2">
+            <p className="text-gray-600 lg:text-lg mt-0 lg:mt-2">
               Candidates must have passed{" "}
               <span className="font-bold">10+2 (Intermediate)</span> from a
               recognized board.
@@ -45,24 +45,24 @@ const BCAEligibilityDetails = () => {
           </div>
 
           {/* Card 2 */}
-          <div className="bg-gray-100 border border-gray-300 p-4 rounded-lg hover:shadow-md transition-all">
+          <div className="bg-gray-100 border border-gray-300 p-2 lg:p-4 rounded-lg hover:shadow-md transition-all">
             <p className="font-medium flex text-lg lg:text-xl items-center gap-2">
               <FaCheckCircle className="text-blue-600" />
               Minimum Marks
             </p>
-            <p className="text-gray-600 lg:text-lg mt-2">
+            <p className="text-gray-600 lg:text-lg mt-0 lg:mt-2">
               Minimum <span className="font-bold">45%–50%</span> aggregate marks
               (as per university norms).
             </p>
           </div>
 
           {/* Card 3 */}
-          <div className="bg-gray-100 border border-gray-300 p-4 rounded-lg hover:shadow-md transition-all">
+          <div className="bg-gray-100 border border-gray-300 p-2 lg:p-4 rounded-lg hover:shadow-md transition-all">
             <p className="font-medium flex text-lg lg:text-xl items-center gap-2">
               <FaCheckCircle className="text-blue-600" />
               Mandatory Subjects
             </p>
-            <p className="text-gray-600 lg:text-lg mt-2">
+            <p className="text-gray-600 lg:text-lg mt-0 lg:mt-2">
               Must have passed in{" "}
               <span className="font-bold">
                 Mathematics, Business Mathematics, Computer Science, or
@@ -73,12 +73,12 @@ const BCAEligibilityDetails = () => {
           </div>
 
           {/* Card 4 */}
-          <div className="bg-gray-100 border border-gray-300 p-4 rounded-lg hover:shadow-md transition-all">
+          <div className="bg-gray-100 border border-gray-300 p-2 lg:p-4 rounded-lg hover:shadow-md transition-all">
             <p className="font-medium flex text-lg lg:text-xl items-center gap-2">
               <FaCheckCircle className="text-blue-600" />
               Reserved Categories
             </p>
-            <p className="text-gray-600 lg:text-lg mt-2">
+            <p className="text-gray-600 lg:text-lg mt-0 lg:mt-2">
               Relaxation in marks for{" "}
               <span className="font-bold">SC/ST/OBC</span> candidates as per
               government rules.
