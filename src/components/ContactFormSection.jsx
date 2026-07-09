@@ -69,6 +69,7 @@ const ContactFormSection = () => {
               <label className="text-sm font-medium">Full Name *</label>
               <input
                 type="text"
+                required
                 name="user_name"
                 value={formData.user_name}
                 onChange={handleChange}
@@ -83,18 +84,20 @@ const ContactFormSection = () => {
                 <label className="text-sm font-medium">Email Address *</label>
                 <input
                   type="email"
+                  required
                   name="user_email"
                   value={formData.user_email}
                   onChange={handleChange}
-                  placeholder="your.email@example.com"
+                  placeholder="your.email@gmail.com"
                   className="w-full mt-1 p-2 lg:p-3 border border-gray-400 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
                 />
               </div>
 
               <div>
-                <label className="text-sm font-medium">Phone Number</label>
+                <label className="text-sm font-medium">Phone Number *</label>
                 <input
                   type="text"
+                  required
                   name="user_phone"
                   value={formData.user_phone}
                   onChange={handleChange}
@@ -106,9 +109,10 @@ const ContactFormSection = () => {
 
             {/* Subject */}
             <div>
-              <label className="text-sm font-medium">Subject</label>
+              <label className="text-sm font-medium">Subject *</label>
               <select
                 name="subject"
+                required
                 value={formData.subject}
                 onChange={handleChange}
                 className="w-full mt-1 p-2 lg:p-3 border border-gray-400 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
@@ -125,6 +129,7 @@ const ContactFormSection = () => {
               <label className="text-sm font-medium">Message *</label>
               <textarea
                 name="message"
+                required
                 value={formData.message}
                 onChange={handleChange}
                 rows="4"
