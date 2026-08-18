@@ -3,7 +3,7 @@ import { GrAnnounce } from "react-icons/gr";
 const AnnouncementBar = () => {
   const announcements = [
     "Admission for BCA (Duration: 3 Years) Session 2026-29 is Going On!",
-    "Practical Examination of BCA, Session 2025-28 (Semester 1) will start from 11-06-2026.",
+    // "Practical Examination of BCA, Session 2025-28 (Semester 1) will start from 11-06-2026.",
   ];
 
   return (

@@ -72,6 +72,16 @@ const images = [
     title: "Republic Day Celebration",
     date: "26th January 2025",
   },
+  {
+    src: "/independence_day_2026.jpeg",
+    title: "Independence Day Celebration",
+    date: "15th August 2026",
+  },
+  {
+    src: "/independence__day_2026.jpeg",
+    title: "Independence Day Celebration",
+    date: "15th August 2026",
+  },
 ];
 
 const ModernGallery = () => {
