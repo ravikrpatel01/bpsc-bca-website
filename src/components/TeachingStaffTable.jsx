@@ -12,9 +12,9 @@ const staffData = [
   },
   {
     name: "Ravi Kumar Patel",
-    designation: "Assistant Professor & HOD",
+    designation: "Asst. Professor & HOD",
     subject: "Physical Science",
-    image: "/ravi_kr_patel.jpeg",
+    image: "/ravi_img.png",
     githubLink: "https://github.com/ravikrpatel01",
     linkedInLink: "https://www.linkedin.com/in/ravi-kumar-patel-01a9a8247/",
     email: "ravikumarpatel2001@gmail.com",
