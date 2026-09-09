@@ -25,6 +25,11 @@ const images = [
     date: "5th September 2026",
   },
   {
+    src: "/teachers_day_21.jpeg",
+    title: "Teacher's Day Celebration",
+    date: "5th September 2026",
+  },
+  {
     src: "/teachers_day_5.jpeg",
     title: "Teacher's Day Celebration",
     date: "5th September 2026",
@@ -35,10 +40,16 @@ const images = [
     date: "5th September 2026",
   },
   {
+    src: "/teachers_day_19.jpeg",
+    title: "Teacher's Day Celebration",
+    date: "5th September 2026",
+  },
+  {
     src: "/teachers_day_7.jpeg",
     title: "Teacher's Day Celebration",
     date: "5th September 2026",
   },
+
   {
     src: "/teachers_day_8.jpeg",
     title: "Teacher's Day Celebration",
@@ -69,11 +80,7 @@ const images = [
     title: "Teacher's Day Celebration",
     date: "5th September 2026",
   },
-  {
-    src: "/teachers_day_21.jpeg",
-    title: "Teacher's Day Celebration",
-    date: "5th September 2026",
-  },
+
   {
     src: "/teachers_day_14.jpeg",
     title: "Teacher's Day Celebration",
@@ -84,11 +91,7 @@ const images = [
     title: "Teacher's Day Celebration",
     date: "5th September 2026",
   },
-  {
-    src: "/teachers_day_19.jpeg",
-    title: "Teacher's Day Celebration",
-    date: "5th September 2026",
-  },
+
   {
     src: "/teachers_day_16.jpeg",
     title: "Teacher's Day Celebration",
