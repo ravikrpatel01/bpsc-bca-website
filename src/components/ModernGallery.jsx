@@ -2,6 +2,114 @@ import { useState } from "react";
 
 const images = [
   {
+    src: "/teachers_day_4.jpeg",
+    title: "Teacher's Day Celebration",
+    date: "5th September 2026",
+  },
+  {
+    src: "/teachers_day_1.jpeg",
+    title: "Teacher's Day Celebration",
+    date: "5th September 2026",
+  },
+  {
+    src: "/teachers_day_2.jpeg",
+    title: "Teacher's Day Celebration",
+    date: "5th September 2026",
+  },
+  {
+    src: "/teachers_day_3.jpeg",
+    title: "Teacher's Day Celebration",
+    date: "5th September 2026",
+  },
+  {
+    src: "/teachers_day_5.jpeg",
+    title: "Teacher's Day Celebration",
+    date: "5th September 2026",
+  },
+  {
+    src: "/teachers_day_6.jpeg",
+    title: "Teacher's Day Celebration",
+    date: "5th September 2026",
+  },
+  {
+    src: "/teachers_day_7.jpeg",
+    title: "Teacher's Day Celebration",
+    date: "5th September 2026",
+  },
+  {
+    src: "/teachers_day_8.jpeg",
+    title: "Teacher's Day Celebration",
+    date: "5th September 2026",
+  },
+  {
+    src: "/teachers_day_9.jpeg",
+    title: "Teacher's Day Celebration",
+    date: "5th September 2026",
+  },
+  {
+    src: "/teachers_day_10.jpeg",
+    title: "Teacher's Day Celebration",
+    date: "5th September 2026",
+  },
+  {
+    src: "/teachers_day_11.jpeg",
+    title: "Teacher's Day Celebration",
+    date: "5th September 2026",
+  },
+  {
+    src: "/teachers_day_12.jpeg",
+    title: "Teacher's Day Celebration",
+    date: "5th September 2026",
+  },
+  {
+    src: "/teachers_day_13.jpeg",
+    title: "Teacher's Day Celebration",
+    date: "5th September 2026",
+  },
+  {
+    src: "/teachers_day_21.jpeg",
+    title: "Teacher's Day Celebration",
+    date: "5th September 2026",
+  },
+  {
+    src: "/teachers_day_14.jpeg",
+    title: "Teacher's Day Celebration",
+    date: "5th September 2026",
+  },
+  {
+    src: "/teachers_day_15.jpeg",
+    title: "Teacher's Day Celebration",
+    date: "5th September 2026",
+  },
+  {
+    src: "/teachers_day_19.jpeg",
+    title: "Teacher's Day Celebration",
+    date: "5th September 2026",
+  },
+  {
+    src: "/teachers_day_16.jpeg",
+    title: "Teacher's Day Celebration",
+    date: "5th September 2026",
+  },
+  // {
+  //   src: "/teachers_day_17.jpeg",
+  //   title: "Teacher's Day Celebration",
+  //   date: "5th September 2026",
+  // },
+
+  {
+    src: "/teachers_day_18.jpeg",
+    title: "Teacher's Day Celebration",
+    date: "5th September 2026",
+  },
+
+  {
+    src: "/teachers_day_20.jpeg",
+    title: "Teacher's Day Celebration",
+    date: "5th September 2026",
+  },
+
+  {
     src: "/teachers_day_2025.jpg",
     title: "Teachers Day",
     date: "5th September 2025",
