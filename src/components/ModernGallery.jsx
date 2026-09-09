@@ -2,22 +2,25 @@ import { useState } from "react";
 
 const images = [
   {
-    src: "/teachers_day_4.jpeg",
+    src: "/teachers_day_3.jpeg",
     title: "Teacher's Day Celebration",
     date: "5th September 2026",
   },
+
   {
     src: "/teachers_day_1.jpeg",
     title: "Teacher's Day Celebration",
     date: "5th September 2026",
   },
+
   {
     src: "/teachers_day_2.jpeg",
     title: "Teacher's Day Celebration",
     date: "5th September 2026",
   },
+
   {
-    src: "/teachers_day_3.jpeg",
+    src: "/teachers_day_4.jpeg",
     title: "Teacher's Day Celebration",
     date: "5th September 2026",
   },
