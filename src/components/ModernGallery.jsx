@@ -3,25 +3,25 @@ import { useState } from "react";
 const images = [
   {
     src: "/teachers_day_3.jpeg",
-    title: "Teacher's Day Celebration",
+    title: "BCA Batch [2025-28 & 2026-29]",
     date: "5th September 2026",
   },
 
   {
     src: "/teachers_day_1.jpeg",
-    title: "Teacher's Day Celebration",
+    title: "PROF. RAVI KUMAR PATEL",
     date: "5th September 2026",
   },
 
   {
     src: "/teachers_day_2.jpeg",
-    title: "Teacher's Day Celebration",
+    title: "BCA Batch [2025-28 & 2026-29] & B.ED [2025-27]",
     date: "5th September 2026",
   },
 
   {
     src: "/teachers_day_4.jpeg",
-    title: "Teacher's Day Celebration",
+    title: "PROF. DR. VINOD KR. AWASTHI & POOJA KUMARI [B.ED 2024-26]",
     date: "5th September 2026",
   },
   {
@@ -47,6 +47,21 @@ const images = [
   {
     src: "/teachers_day_7.jpeg",
     title: "Teacher's Day Celebration",
+    date: "5th September 2026",
+  },
+  {
+    src: "/arti_kumari.jpeg",
+    title: "Speech (Arti Kumari)",
+    date: "5th September 2026",
+  },
+  {
+    src: "/shristy_mehak_kumari.jpeg",
+    title: "Dance Performance (Shristy & Mehak)",
+    date: "5th September 2026",
+  },
+  {
+    src: "/pragya_bharti.jpeg",
+    title: "Dance Performance (Pragya Bharti)",
     date: "5th September 2026",
   },
 
